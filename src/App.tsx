@@ -8,13 +8,13 @@ function App() {
   console.log(process.env.PUBLIC_URL, process.env.PUBLIC_URL + "/");
   return (
     <div className="relative flex flex-col md:flex-row">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <NavBar />
         <Switch>
-          <Route exact path={process.env.PUBLIC_URL + "/"}>
+          <Route exact path="/">
             <Projects />
           </Route>
-          <Route exact path={process.env.PUBLIC_URL + "/stockchart"}>
+          <Route exact path="/stockchart">
             <div>stocks</div>
           </Route>
         </Switch>
