@@ -12,6 +12,8 @@ module.exports = {
       ...colors,
       transparent: "transparent",
       current: "currentColor",
+      stock_pink: "#ff0082",
+      globe_blue: "#4d87d1",
     },
   },
   variants: {

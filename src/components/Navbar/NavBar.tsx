@@ -11,7 +11,7 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="relative md:w-80 p-4">
+    <div className="relative  md:w-80 md:h-screen p-4">
       <Header handleBurgerClick={handleBurgerClick} />
       <MobileMenu
         burgerIsClicked={burgerIsClicked}
