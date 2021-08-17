@@ -11,10 +11,10 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route exact path={process.env.PUBLIC_URL + "#/"}>
+          <Route exact path={process.env.PUBLIC_URL + "/#/"}>
             <Projects />
           </Route>
-          <Route path={process.env.PUBLIC_URL + "#/stockchart"}>
+          <Route path={process.env.PUBLIC_URL + "/#/stockchart"}>
             <div>stocks</div>
           </Route>
         </Switch>
