@@ -4,7 +4,7 @@ import { MobileMenu } from "./MobileMenu/MobileMenu";
 import { Header } from "./Header/Header";
 
 export const NavBar = () => {
-  const [burgerIsVisible, setBurgerIsVisible] = useState(false);
+  const [burgerIsVisible, setBurgerIsVisible] = useState(true);
 
   const handleBurgerClick = () => {
     setBurgerIsVisible(!burgerIsVisible);
