@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CrossIcon } from "./CrossIcon/CrossIcon";
 import { getClassFromBurgerClick } from "./utils";
 
@@ -10,7 +11,7 @@ export const MobileMenu = ({ burgerIsClicked, handleBurgerClick }: Props) => {
   return (
     <div className={getClassFromBurgerClick(burgerIsClicked)}>
       <div className="flex justify-between ">
-        <div>Projects</div>
+        <Link to="/">Projects</Link>
         <CrossIcon handleBurgerClick={handleBurgerClick} />
       </div>
       <div>CV</div>

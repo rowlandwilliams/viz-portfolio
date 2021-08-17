@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ImgData } from "../../../types";
 import { ProjectHoverText } from "./ProjectHoverText/ProjectHoverText";
 import { importAllImages } from "./utils";
@@ -22,18 +23,20 @@ export const Project = ({
 }: Props) => {
   return (
     <div className="w-full md:w-auto mx-2">
-      <div className="relative">
-        <img
-          src={images.filter((img) => img.slug === imgName)[0].module.default}
-          alt="suh"
-          className="relative"
-        />
-        <ProjectHoverText
-          projectTitle={projectTitle}
-          projectStack={projectStack}
-          backgroundColor={backgroundColor}
-        />
-      </div>
+      <Link to={imgName}>
+        <div className="relative">
+          <img
+            src={images.filter((img) => img.slug === imgName)[0].module.default}
+            alt="suh"
+            className="relative"
+          />
+          <ProjectHoverText
+            projectTitle={projectTitle}
+            projectStack={projectStack}
+            backgroundColor={backgroundColor}
+          />
+        </div>
+      </Link>
     </div>
   );
 };
