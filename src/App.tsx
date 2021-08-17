@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex flex-col md:flex-row">
+    <div className="relative flex flex-col md:flex-row">
       <Router>
         <NavBar />
         <Switch>

@@ -4,17 +4,17 @@ import { MobileMenu } from "./MobileMenu/MobileMenu";
 import { Header } from "./Header/Header";
 
 export const NavBar = () => {
-  const [burgerIsClicked, setBurgerIsClicked] = useState(false);
+  const [burgerIsVisible, setBurgerIsVisible] = useState(false);
 
   const handleBurgerClick = () => {
-    setBurgerIsClicked(!burgerIsClicked);
+    setBurgerIsVisible(!burgerIsVisible);
   };
 
   return (
-    <div className="relative  md:w-80 md:h-screen p-4">
+    <div className="w-screen md:w-80 md:h-screen p-4">
       <Header handleBurgerClick={handleBurgerClick} />
       <MobileMenu
-        burgerIsClicked={burgerIsClicked}
+        burgerIsVisible={burgerIsVisible}
         handleBurgerClick={handleBurgerClick}
       />
       <DesktopMenu />
