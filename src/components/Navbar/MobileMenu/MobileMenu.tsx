@@ -20,7 +20,7 @@ export const MobileMenu = ({ burgerIsVisible, handleBurgerClick }: Props) => {
       )}
     >
       <div className="flex justify-between ">
-        <Link to={process.env.PUBLIC_URL + "/"}>Projects</Link>
+        <Link to="/">Projects</Link>
         <CrossIcon handleBurgerClick={handleBurgerClick} />
       </div>
       <div>CV</div>
