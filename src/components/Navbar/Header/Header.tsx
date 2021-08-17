@@ -11,7 +11,7 @@ export const Header = ({ handleBurgerClick }: Props) => {
       <Link to="/">
         <div className="flex justify-between items-center">
           <div>
-            <div className="text-2xl">ROWLAND WILLIAMS</div>
+            <div className="text-2xl">Rowland Williams</div>
           </div>
           <BurgerIcon handleBurgerClick={handleBurgerClick} />
         </div>
