@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ImgData } from "../../types";
-import { importAllImages } from "../ProjectsGrid/Project/utils";
 import { projectData } from "../utils/projectData";
 import { ImageSlider } from "./ImageSlider/ImageSlider";
 import { MainImage } from "./MainImage/MainImage";
@@ -11,12 +10,6 @@ interface Props {
   projectName: string;
   projectImages: ImgData[];
 }
-
-const icons = importAllImages(
-  require.context("../../assets/img/icons/"),
-  ".svg"
-);
-console.log(icons);
 
 export const PageTemplate = ({ projectName, projectImages }: Props) => {
   const [imgIndex, setImgIndex] = useState(0);
