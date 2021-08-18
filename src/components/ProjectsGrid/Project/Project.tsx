@@ -27,7 +27,7 @@ export const Project = ({
         <div className="relative">
           <img
             src={images.filter((img) => img.slug === imgName)[0].module.default}
-            alt="suh"
+            alt={imgName}
             className="relative"
           />
           <ProjectHoverText

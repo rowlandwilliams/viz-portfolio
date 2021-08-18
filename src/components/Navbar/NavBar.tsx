@@ -11,7 +11,7 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="w-screen md:w-80 md:h-screen p-4">
+    <div className="w-screen md:w-80 md:h-screen p-4 bg-white">
       <Header handleBurgerClick={handleBurgerClick} />
       <MobileMenu
         burgerIsVisible={burgerIsVisible}
