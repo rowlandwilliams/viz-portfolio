@@ -33,7 +33,7 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
   };
 
   return (
-    <div className="w-full p-4">
+    <div className="w-full p-4 bg-gray-100">
       <div className="flex justify-between items-center mb-4 md:mb-8">
         <div className="text-xl">{projectTitle}</div>
         <StackLabels

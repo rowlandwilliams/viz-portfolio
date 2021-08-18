@@ -13,7 +13,7 @@ const allImages: ImgData[] = importAllImages(
 );
 const App = () => {
   return (
-    <div className="relative flex flex-col md:flex-row bg-gray-100 h-auto">
+    <div className="relative flex flex-col md:flex-row ">
       <Router basename={process.env.PUBLIC_URL}>
         <NavBar />
         <Switch>
