@@ -9,7 +9,7 @@ interface Props {
 export const ProjectsGrid = ({ allImages }: Props) => {
   return (
     <div className="flex bg-gray-100 p-4">
-      <div className="w-1/2">
+      <div className="w-5/12">
         {projectData.map(
           (project, i) =>
             i % 2 === 0 && (
@@ -28,7 +28,7 @@ export const ProjectsGrid = ({ allImages }: Props) => {
             )
         )}
       </div>
-      <div className="w-1/2">
+      <div className="w-7/12">
         {projectData.map(
           (project, i) =>
             i % 2 !== 0 && (
@@ -47,20 +47,6 @@ export const ProjectsGrid = ({ allImages }: Props) => {
             )
         )}
       </div>
-      {/* {projectData.map((project) => (
-        <Project
-          imgName={project.imgName}
-          projectTitle={project.projectTitle}
-          projectStack={project.projectStack}
-          backgroundColor={project.backgroundColor}
-          projectThumbnail={
-            allImages.filter((imageObj) => {
-              const re = new RegExp(project.imgName, "g");
-              return imageObj.slug.match(re);
-            })[0].module.default
-          }
-        />
-      ))} */}
     </div>
   );
 };
