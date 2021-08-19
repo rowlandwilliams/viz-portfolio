@@ -1,28 +1,38 @@
 {
   "files": {
-    "main.css": "/viz-portfolio/static/css/main.648c4529.chunk.css",
-    "main.js": "/viz-portfolio/static/js/main.51678335.chunk.js",
-    "main.js.map": "/viz-portfolio/static/js/main.51678335.chunk.js.map",
-    "runtime-main.js": "/viz-portfolio/static/js/runtime-main.fb540846.js",
-    "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.fb540846.js.map",
+    "main.css": "/viz-portfolio/static/css/main.516abcbe.chunk.css",
+    "main.js": "/viz-portfolio/static/js/main.a5d42a6b.chunk.js",
+    "main.js.map": "/viz-portfolio/static/js/main.a5d42a6b.chunk.js.map",
+    "runtime-main.js": "/viz-portfolio/static/js/runtime-main.abee42d3.js",
+    "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.abee42d3.js.map",
     "static/js/2.db9e1ad9.chunk.js": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js",
     "static/js/2.db9e1ad9.chunk.js.map": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js.map",
-    "static/js/3.a1aa7ee9.chunk.js": "/viz-portfolio/static/js/3.a1aa7ee9.chunk.js",
-    "static/js/3.a1aa7ee9.chunk.js.map": "/viz-portfolio/static/js/3.a1aa7ee9.chunk.js.map",
+    "static/js/3.7c254a52.chunk.js": "/viz-portfolio/static/js/3.7c254a52.chunk.js",
+    "static/js/3.7c254a52.chunk.js.map": "/viz-portfolio/static/js/3.7c254a52.chunk.js.map",
     "index.html": "/viz-portfolio/index.html",
-    "static/css/main.648c4529.chunk.css.map": "/viz-portfolio/static/css/main.648c4529.chunk.css.map",
+    "static/css/main.516abcbe.chunk.css.map": "/viz-portfolio/static/css/main.516abcbe.chunk.css.map",
     "static/js/2.db9e1ad9.chunk.js.LICENSE.txt": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/viz-portfolio/static/media/Inter-Regular.9cd7588f.ttf",
+    "static/media/index.css": "/viz-portfolio/static/media/LibreFranklin-Regular.fc7862f0.ttf",
+    "static/media/co2widget0.jpg": "/viz-portfolio/static/media/co2widget0.214bf5d2.jpg",
+    "static/media/cycle-map0.jpg": "/viz-portfolio/static/media/cycle-map0.9d193776.jpg",
+    "static/media/cycle-map1.jpg": "/viz-portfolio/static/media/cycle-map1.cb316fab.jpg",
+    "static/media/cycle-map2.jpg": "/viz-portfolio/static/media/cycle-map2.3e56cfbc.jpg",
+    "static/media/farmingthefuture.jpg": "/viz-portfolio/static/media/farmingthefuture.596488d7.jpg",
+    "static/media/flow0.jpg": "/viz-portfolio/static/media/flow0.ee691df3.jpg",
+    "static/media/flow1.jpg": "/viz-portfolio/static/media/flow1.07dbe63d.jpg",
+    "static/media/flow2.jpg": "/viz-portfolio/static/media/flow2.71a5718c.jpg",
+    "static/media/flow3.jpg": "/viz-portfolio/static/media/flow3.b2c021cd.jpg",
     "static/media/matopiba0.jpg": "/viz-portfolio/static/media/matopiba0.0afd2d7a.jpg",
     "static/media/stock-chart0.jpg": "/viz-portfolio/static/media/stock-chart0.8c906a1e.jpg",
     "static/media/stock-chart1.jpg": "/viz-portfolio/static/media/stock-chart1.7bf42337.jpg",
     "static/media/stock-chart2.jpg": "/viz-portfolio/static/media/stock-chart2.739a5505.jpg",
-    "static/media/supernova.jpg": "/viz-portfolio/static/media/supernova.250f1e75.jpg"
+    "static/media/supernova.jpg": "/viz-portfolio/static/media/supernova.250f1e75.jpg",
+    "static/media/voronoi0.jpg": "/viz-portfolio/static/media/voronoi0.1097af7f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fb540846.js",
+    "static/js/runtime-main.abee42d3.js",
     "static/js/2.db9e1ad9.chunk.js",
-    "static/css/main.648c4529.chunk.css",
-    "static/js/main.51678335.chunk.js"
+    "static/css/main.516abcbe.chunk.css",
+    "static/js/main.a5d42a6b.chunk.js"
   ]
 }
