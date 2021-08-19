@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/viz-portfolio/static/css/main.dcf91c5b.chunk.css",
-    "main.js": "/viz-portfolio/static/js/main.4105cbb3.chunk.js",
-    "main.js.map": "/viz-portfolio/static/js/main.4105cbb3.chunk.js.map",
-    "runtime-main.js": "/viz-portfolio/static/js/runtime-main.7684ca6e.js",
-    "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.7684ca6e.js.map",
+    "main.css": "/viz-portfolio/static/css/main.6d80ad4a.chunk.css",
+    "main.js": "/viz-portfolio/static/js/main.b276d0ae.chunk.js",
+    "main.js.map": "/viz-portfolio/static/js/main.b276d0ae.chunk.js.map",
+    "runtime-main.js": "/viz-portfolio/static/js/runtime-main.93e17e05.js",
+    "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.93e17e05.js.map",
     "static/js/2.db9e1ad9.chunk.js": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js",
     "static/js/2.db9e1ad9.chunk.js.map": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js.map",
-    "static/js/3.e012ecd2.chunk.js": "/viz-portfolio/static/js/3.e012ecd2.chunk.js",
-    "static/js/3.e012ecd2.chunk.js.map": "/viz-portfolio/static/js/3.e012ecd2.chunk.js.map",
+    "static/js/3.7a2ed8ba.chunk.js": "/viz-portfolio/static/js/3.7a2ed8ba.chunk.js",
+    "static/js/3.7a2ed8ba.chunk.js.map": "/viz-portfolio/static/js/3.7a2ed8ba.chunk.js.map",
     "index.html": "/viz-portfolio/index.html",
-    "static/css/main.dcf91c5b.chunk.css.map": "/viz-portfolio/static/css/main.dcf91c5b.chunk.css.map",
+    "static/css/main.6d80ad4a.chunk.css.map": "/viz-portfolio/static/css/main.6d80ad4a.chunk.css.map",
     "static/js/2.db9e1ad9.chunk.js.LICENSE.txt": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js.LICENSE.txt",
     "static/media/index.css": "/viz-portfolio/static/media/LibreFranklin-Regular.fc7862f0.ttf",
     "static/media/co2widget0.jpg": "/viz-portfolio/static/media/co2widget0.214bf5d2.jpg",
@@ -22,7 +22,10 @@
     "static/media/flow1.jpg": "/viz-portfolio/static/media/flow1.07dbe63d.jpg",
     "static/media/flow2.jpg": "/viz-portfolio/static/media/flow2.71a5718c.jpg",
     "static/media/flow3.jpg": "/viz-portfolio/static/media/flow3.b2c021cd.jpg",
-    "static/media/matopiba0.jpg": "/viz-portfolio/static/media/matopiba0.0afd2d7a.jpg",
+    "static/media/matopiba0.jpg": "/viz-portfolio/static/media/matopiba0.98c2a65d.jpg",
+    "static/media/matopiba1.jpg": "/viz-portfolio/static/media/matopiba1.4b40560a.jpg",
+    "static/media/matopiba2.jpg": "/viz-portfolio/static/media/matopiba2.ef301837.jpg",
+    "static/media/matopiba3.jpg": "/viz-portfolio/static/media/matopiba3.e3c0a566.jpg",
     "static/media/stock-chart0.jpg": "/viz-portfolio/static/media/stock-chart0.8c906a1e.jpg",
     "static/media/stock-chart1.jpg": "/viz-portfolio/static/media/stock-chart1.7bf42337.jpg",
     "static/media/stock-chart2.jpg": "/viz-portfolio/static/media/stock-chart2.739a5505.jpg",
@@ -31,9 +34,9 @@
     "static/media/voronoi0.jpg": "/viz-portfolio/static/media/voronoi0.1097af7f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7684ca6e.js",
+    "static/js/runtime-main.93e17e05.js",
     "static/js/2.db9e1ad9.chunk.js",
-    "static/css/main.dcf91c5b.chunk.css",
-    "static/js/main.4105cbb3.chunk.js"
+    "static/css/main.6d80ad4a.chunk.css",
+    "static/js/main.b276d0ae.chunk.js"
   ]
 }
