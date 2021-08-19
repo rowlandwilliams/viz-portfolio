@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/viz-portfolio/static/css/main.516abcbe.chunk.css",
-    "main.js": "/viz-portfolio/static/js/main.a5d42a6b.chunk.js",
-    "main.js.map": "/viz-portfolio/static/js/main.a5d42a6b.chunk.js.map",
-    "runtime-main.js": "/viz-portfolio/static/js/runtime-main.abee42d3.js",
-    "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.abee42d3.js.map",
+    "main.css": "/viz-portfolio/static/css/main.dcf91c5b.chunk.css",
+    "main.js": "/viz-portfolio/static/js/main.4105cbb3.chunk.js",
+    "main.js.map": "/viz-portfolio/static/js/main.4105cbb3.chunk.js.map",
+    "runtime-main.js": "/viz-portfolio/static/js/runtime-main.7684ca6e.js",
+    "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.7684ca6e.js.map",
     "static/js/2.db9e1ad9.chunk.js": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js",
     "static/js/2.db9e1ad9.chunk.js.map": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js.map",
-    "static/js/3.7c254a52.chunk.js": "/viz-portfolio/static/js/3.7c254a52.chunk.js",
-    "static/js/3.7c254a52.chunk.js.map": "/viz-portfolio/static/js/3.7c254a52.chunk.js.map",
+    "static/js/3.e012ecd2.chunk.js": "/viz-portfolio/static/js/3.e012ecd2.chunk.js",
+    "static/js/3.e012ecd2.chunk.js.map": "/viz-portfolio/static/js/3.e012ecd2.chunk.js.map",
     "index.html": "/viz-portfolio/index.html",
-    "static/css/main.516abcbe.chunk.css.map": "/viz-portfolio/static/css/main.516abcbe.chunk.css.map",
+    "static/css/main.dcf91c5b.chunk.css.map": "/viz-portfolio/static/css/main.dcf91c5b.chunk.css.map",
     "static/js/2.db9e1ad9.chunk.js.LICENSE.txt": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js.LICENSE.txt",
     "static/media/index.css": "/viz-portfolio/static/media/LibreFranklin-Regular.fc7862f0.ttf",
     "static/media/co2widget0.jpg": "/viz-portfolio/static/media/co2widget0.214bf5d2.jpg",
@@ -27,12 +27,13 @@
     "static/media/stock-chart1.jpg": "/viz-portfolio/static/media/stock-chart1.7bf42337.jpg",
     "static/media/stock-chart2.jpg": "/viz-portfolio/static/media/stock-chart2.739a5505.jpg",
     "static/media/supernova.jpg": "/viz-portfolio/static/media/supernova.250f1e75.jpg",
+    "static/media/supernova1.jpg": "/viz-portfolio/static/media/supernova1.897075cb.jpg",
     "static/media/voronoi0.jpg": "/viz-portfolio/static/media/voronoi0.1097af7f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.abee42d3.js",
+    "static/js/runtime-main.7684ca6e.js",
     "static/js/2.db9e1ad9.chunk.js",
-    "static/css/main.516abcbe.chunk.css",
-    "static/js/main.a5d42a6b.chunk.js"
+    "static/css/main.dcf91c5b.chunk.css",
+    "static/js/main.4105cbb3.chunk.js"
   ]
 }
