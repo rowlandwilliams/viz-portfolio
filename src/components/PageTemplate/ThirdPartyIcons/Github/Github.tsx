@@ -1,6 +1,6 @@
 interface Props {
   repoUrl: string;
-  backgroundColor: string;
+  backgroundColor?: string;
 }
 
 export const Github = ({ repoUrl, backgroundColor }: Props) => {

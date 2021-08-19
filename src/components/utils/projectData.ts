@@ -37,7 +37,7 @@ export const projectData = [
       "https://medium.com/trase/matopiba-brazils-soy-frontier-9ad4cc6fe2d9",
     repoUrl: "https://github.com/rowlandwilliams/matopiba-vis",
     projectDescription:
-      "Visual blog exploring the rapid expansion of soy exports from the Matopiba region of brazil",
+      "Visual blog exploring the rapid expansion of soy exports from the Matopiba region of Brazil",
     projectBullets: [
       "Created SVG based visualisations.",
       "Wrote copy and performed data analyses in R.",

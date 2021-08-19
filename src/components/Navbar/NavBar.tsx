@@ -2,6 +2,7 @@ import { useState } from "react";
 import { DesktopMenu } from "./DesktopMenu/DesktopMenu";
 import { MobileMenu } from "./MobileMenu/MobileMenu";
 import { Header } from "./Header/Header";
+import { SocialIcons } from "./SocialIcons/SocialIcons";
 
 export const NavBar = () => {
   const [burgerIsVisible, setBurgerIsVisible] = useState(true);
@@ -18,6 +19,9 @@ export const NavBar = () => {
         handleBurgerClick={handleBurgerClick}
       />
       <DesktopMenu />
+      <div className="hidden md:flex">
+        <SocialIcons />
+      </div>
     </div>
   );
 };
