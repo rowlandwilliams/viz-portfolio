@@ -13,3 +13,7 @@
     src: url(./fonts/LibreFranklin-Regular.ttf);
   }
 }
+
+body {
+  background-color: #f3f4f6;
+}
