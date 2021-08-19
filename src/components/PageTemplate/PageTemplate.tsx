@@ -54,11 +54,13 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
           backgroundColor={backgroundColor}
           projectImages={projectImages}
         />
-        <div className="mt-8 mb-4 px-2">{projectDescription}</div>
-        <div className="my-4">
-          {projectBullets.map((bullet) => (
-            <div>- {bullet}</div>
-          ))}
+        <div className="px-2">
+          <div className="mt-8 mb-4">{projectDescription}</div>
+          <div className="text-sm my-4">
+            {projectBullets.map((bullet) => (
+              <div>- {bullet}</div>
+            ))}
+          </div>
         </div>
         <StackLabels
           projectStack={projectStack}

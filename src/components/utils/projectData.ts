@@ -70,7 +70,7 @@ export const projectData = [
     imgName: "co2widget",
     projectTitle: "Reporting Carbon Dioxide levels",
     projectStack: ["Frontend development", "PHP"],
-    backgroundColor: "white",
+    backgroundColor: "green-200",
     projectUrl: "https://co2widget.com/",
     projectDescription:
       "An widget displaying daily atmospheric Carbon Dioxide levels",
