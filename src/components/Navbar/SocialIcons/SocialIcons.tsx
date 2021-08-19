@@ -1,4 +1,4 @@
-import { LinkedIn } from "../../Icons/LinkedIn/Linkedin";
+import { LinkedIn } from "../Icons/LinkedIn/Linkedin";
 import { Github } from "../../PageTemplate/ThirdPartyIcons/Github/Github";
 
 export const SocialIcons = () => {

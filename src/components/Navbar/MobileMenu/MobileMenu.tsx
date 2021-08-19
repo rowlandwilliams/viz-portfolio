@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import { SocialIcons } from "../SocialIcons/SocialIcons";
 import { CrossIcon } from "./CrossIcon/CrossIcon";
 
 interface Props {
@@ -19,17 +20,26 @@ export const MobileMenu = ({ burgerIsVisible, handleBurgerClick }: Props) => {
         "w-full h-screen p-4 bg-gray-100 z-20 bg-opacity-95"
       )}
     >
-      <div className="flex justify-between ">
-        <Link to="/" onClick={handleBurgerClick}>Projects</Link>
-        <CrossIcon handleBurgerClick={handleBurgerClick} />
+      <div className="flex flex-col justify-between h-full">
+        <div>
+          <div className="flex justify-between ">
+            <Link to="/" onClick={handleBurgerClick}>
+              Projects
+            </Link>
+            <CrossIcon handleBurgerClick={handleBurgerClick} />
+          </div>
+          <a
+            href="https://rowlandwilliams.github.io/cv/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <div className="hover:opacity-30"> CV</div>
+          </a>
+        </div>
+        <div className="flex justify-center md:hidden">
+          <SocialIcons />
+        </div>
       </div>
-      <a
-        href="https://rowlandwilliams.github.io/cv/"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        <div className="hover:opacity-30"> CV</div>
-      </a>{" "}
     </div>
   );
 };

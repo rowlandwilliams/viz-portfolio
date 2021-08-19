@@ -6,7 +6,6 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { importAllImages } from "./components/ProjectsGrid/Project/utils";
 import { ImgData } from "./types";
 import { ProjectRoutes } from "./components/ProjectRoutes/ProjectRoutes";
-import { SocialIcons } from "./components/Navbar/SocialIcons/SocialIcons";
 
 const allImages: ImgData[] = importAllImages(
   require.context("./assets/img/"),
@@ -23,9 +22,6 @@ const App = () => {
           </Route>
           <ProjectRoutes allImages={allImages} />
         </Switch>
-        <div className="flex justify-center md:hidden">
-          <SocialIcons />
-        </div>
       </Router>
     </div>
   );
