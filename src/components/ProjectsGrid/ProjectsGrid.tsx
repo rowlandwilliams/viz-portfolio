@@ -8,7 +8,7 @@ interface Props {
 
 export const ProjectsGrid = ({ allImages }: Props) => {
   return (
-    <div className="flex bg-gray-100 p-4">
+    <div className="h-screen md:h-auto flex bg-gray-100 p-4 mt-20 md:mt-0 md:ml-80">
       <div className="w-5/12">
         {projectData.map(
           (project, i) =>

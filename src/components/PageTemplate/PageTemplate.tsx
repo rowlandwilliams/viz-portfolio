@@ -25,6 +25,7 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
     backgroundColor,
     projectStack,
     projectDescription,
+    projectBullets,
     imgName,
   } = project;
 
@@ -33,7 +34,7 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
   };
 
   return (
-    <div className="w-full p-4 bg-gray-100">
+    <div className="w-full p-4 mt-20 md:mt-0 md:ml-80 bg-gray-100">
       <div className="flex justify-between items-center mb-4 md:mb-8">
         <div className="text-xl">{projectTitle}</div>
         <StackLabels
@@ -53,7 +54,12 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
           backgroundColor={backgroundColor}
           projectImages={projectImages}
         />
-        <div className="my-8 px-2">{projectDescription}</div>
+        <div className="mt-8 mb-4 px-2">{projectDescription}</div>
+        <div className="my-4">
+          {projectBullets.map((bullet) => (
+            <div>- {bullet}</div>
+          ))}
+        </div>
         <StackLabels
           projectStack={projectStack}
           backgroundColor={backgroundColor}

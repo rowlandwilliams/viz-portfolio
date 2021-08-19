@@ -10,7 +10,7 @@ export const StackLabels = ({
   isDesktop = false,
 }: Props) => {
   const wrapperClass = isDesktop
-    ? "flex px-2 md:hidden mb-8"
+    ? "flex px-2 md:hidden mb-8 text-xs"
     : "hidden md:flex px-2";
 
   return (
