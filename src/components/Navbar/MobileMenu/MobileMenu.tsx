@@ -20,10 +20,16 @@ export const MobileMenu = ({ burgerIsVisible, handleBurgerClick }: Props) => {
       )}
     >
       <div className="flex justify-between ">
-        <Link to="/">Projects</Link>
+        <Link to="/" onClick={handleBurgerClick}>Projects</Link>
         <CrossIcon handleBurgerClick={handleBurgerClick} />
       </div>
-      <div>CV</div>
+      <a
+        href="https://rowlandwilliams.github.io/cv/"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <div className="hover:opacity-30"> CV</div>
+      </a>{" "}
     </div>
   );
 };
