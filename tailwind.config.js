@@ -20,7 +20,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "Helvetica", "Arial", "sans-serif"],
+        "libre-franklin": ["LibreFranklin"],
+        inter: ["Inter"],
       },
     },
     colors: {

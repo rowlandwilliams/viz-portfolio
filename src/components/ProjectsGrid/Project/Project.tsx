@@ -17,7 +17,7 @@ export const Project = ({
   projectThumbnail,
 }: Props) => {
   return (
-    <div className="w-full md:w-auto mx-2">
+    <div className="w-full md:w-auto mx-2 mb-4">
       <Link to={imgName}>
         <div className="relative">
           <img src={projectThumbnail} alt={imgName} />
