@@ -36,7 +36,7 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
   return (
     <div className="w-full p-4 mt-20 md:mt-0 md:ml-60 bg-gray-100">
       <div className="flex justify-between items-center mb-4 md:mb-8">
-        <div className="text-xl">{projectTitle}</div>
+        <div>{projectTitle}</div>
         <StackLabels
           projectStack={projectStack}
           backgroundColor={backgroundColor}
