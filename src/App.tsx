@@ -6,6 +6,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { importAllImages } from "./components/ProjectsGrid/Project/utils";
 import { ImgData } from "./types";
 import { ProjectRoutes } from "./components/ProjectRoutes/ProjectRoutes";
+import { Bio } from "./components/Bio/Bio";
 
 const allImages: ImgData[] = importAllImages(
   require.context("./assets/img/"),
@@ -19,6 +20,9 @@ const App = () => {
         <Switch>
           <Route exact path="/">
             <ProjectsGrid allImages={allImages} />
+          </Route>
+          <Route path="/about">
+            <Bio />
           </Route>
           <ProjectRoutes allImages={allImages} />
         </Switch>

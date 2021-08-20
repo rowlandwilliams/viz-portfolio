@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 export const DesktopMenu = () => {
   return (
     <div className="hidden md:block mt-8 text-sm">
-      <Link to="/" className="hover:opacity-30">
-        Projects
+      <Link to="/">
+        <div className="hover:opacity-30">Projects</div>
+      </Link>
+      <Link to="/about" className="hover:opacity-30">
+        <div className="hover:opacity-30">Bio</div>
       </Link>
       <a
         href="https://rowlandwilliams.github.io/cv/"

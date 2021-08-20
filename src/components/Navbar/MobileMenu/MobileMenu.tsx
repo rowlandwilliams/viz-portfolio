@@ -22,12 +22,23 @@ export const MobileMenu = ({ burgerIsVisible, handleBurgerClick }: Props) => {
     >
       <div className="flex flex-col justify-between h-full">
         <div>
-          <div className="flex justify-between ">
-            <Link to="/" onClick={handleBurgerClick}>
-              Projects
-            </Link>
+          <div className="flex justify-between">
+            <div>
+              <Link to="/" onClick={handleBurgerClick}>
+                Projects
+              </Link>
+              <Link
+                to="/about"
+                className="hover:opacity-30"
+                onClick={handleBurgerClick}
+              >
+                <div className="hover:opacity-30">Bio</div>
+              </Link>
+            </div>
+
             <CrossIcon handleBurgerClick={handleBurgerClick} />
           </div>
+
           <a
             href="https://rowlandwilliams.github.io/cv/"
             target="_blank"
