@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/viz-portfolio/static/css/main.fea5cb3a.chunk.css",
-    "main.js": "/viz-portfolio/static/js/main.67b70508.chunk.js",
-    "main.js.map": "/viz-portfolio/static/js/main.67b70508.chunk.js.map",
+    "main.css": "/viz-portfolio/static/css/main.1d3d2275.chunk.css",
+    "main.js": "/viz-portfolio/static/js/main.13fbde4d.chunk.js",
+    "main.js.map": "/viz-portfolio/static/js/main.13fbde4d.chunk.js.map",
     "runtime-main.js": "/viz-portfolio/static/js/runtime-main.5ababa92.js",
     "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.5ababa92.js.map",
     "static/js/2.147f17af.chunk.js": "/viz-portfolio/static/js/2.147f17af.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.02583504.chunk.js": "/viz-portfolio/static/js/3.02583504.chunk.js",
     "static/js/3.02583504.chunk.js.map": "/viz-portfolio/static/js/3.02583504.chunk.js.map",
     "index.html": "/viz-portfolio/index.html",
-    "static/css/main.fea5cb3a.chunk.css.map": "/viz-portfolio/static/css/main.fea5cb3a.chunk.css.map",
+    "static/css/main.1d3d2275.chunk.css.map": "/viz-portfolio/static/css/main.1d3d2275.chunk.css.map",
     "static/js/2.147f17af.chunk.js.LICENSE.txt": "/viz-portfolio/static/js/2.147f17af.chunk.js.LICENSE.txt",
     "static/media/index.css": "/viz-portfolio/static/media/LibreFranklin-Regular.fc7862f0.ttf",
     "static/media/co2widget0.jpg": "/viz-portfolio/static/media/co2widget0.214bf5d2.jpg",
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ababa92.js",
     "static/js/2.147f17af.chunk.js",
-    "static/css/main.fea5cb3a.chunk.css",
-    "static/js/main.67b70508.chunk.js"
+    "static/css/main.1d3d2275.chunk.css",
+    "static/js/main.13fbde4d.chunk.js"
   ]
 }
