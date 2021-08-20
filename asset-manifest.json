@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/viz-portfolio/static/css/main.6e605d1f.chunk.css",
-    "main.js": "/viz-portfolio/static/js/main.9fd16503.chunk.js",
-    "main.js.map": "/viz-portfolio/static/js/main.9fd16503.chunk.js.map",
-    "runtime-main.js": "/viz-portfolio/static/js/runtime-main.93e17e05.js",
-    "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.93e17e05.js.map",
-    "static/js/2.db9e1ad9.chunk.js": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js",
-    "static/js/2.db9e1ad9.chunk.js.map": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js.map",
-    "static/js/3.7a2ed8ba.chunk.js": "/viz-portfolio/static/js/3.7a2ed8ba.chunk.js",
-    "static/js/3.7a2ed8ba.chunk.js.map": "/viz-portfolio/static/js/3.7a2ed8ba.chunk.js.map",
+    "main.css": "/viz-portfolio/static/css/main.fea5cb3a.chunk.css",
+    "main.js": "/viz-portfolio/static/js/main.67b70508.chunk.js",
+    "main.js.map": "/viz-portfolio/static/js/main.67b70508.chunk.js.map",
+    "runtime-main.js": "/viz-portfolio/static/js/runtime-main.5ababa92.js",
+    "runtime-main.js.map": "/viz-portfolio/static/js/runtime-main.5ababa92.js.map",
+    "static/js/2.147f17af.chunk.js": "/viz-portfolio/static/js/2.147f17af.chunk.js",
+    "static/js/2.147f17af.chunk.js.map": "/viz-portfolio/static/js/2.147f17af.chunk.js.map",
+    "static/js/3.02583504.chunk.js": "/viz-portfolio/static/js/3.02583504.chunk.js",
+    "static/js/3.02583504.chunk.js.map": "/viz-portfolio/static/js/3.02583504.chunk.js.map",
     "index.html": "/viz-portfolio/index.html",
-    "static/css/main.6e605d1f.chunk.css.map": "/viz-portfolio/static/css/main.6e605d1f.chunk.css.map",
-    "static/js/2.db9e1ad9.chunk.js.LICENSE.txt": "/viz-portfolio/static/js/2.db9e1ad9.chunk.js.LICENSE.txt",
+    "static/css/main.fea5cb3a.chunk.css.map": "/viz-portfolio/static/css/main.fea5cb3a.chunk.css.map",
+    "static/js/2.147f17af.chunk.js.LICENSE.txt": "/viz-portfolio/static/js/2.147f17af.chunk.js.LICENSE.txt",
     "static/media/index.css": "/viz-portfolio/static/media/LibreFranklin-Regular.fc7862f0.ttf",
     "static/media/co2widget0.jpg": "/viz-portfolio/static/media/co2widget0.214bf5d2.jpg",
     "static/media/cycle-map0.jpg": "/viz-portfolio/static/media/cycle-map0.9d193776.jpg",
@@ -26,6 +26,7 @@
     "static/media/matopiba1.jpg": "/viz-portfolio/static/media/matopiba1.4b40560a.jpg",
     "static/media/matopiba2.jpg": "/viz-portfolio/static/media/matopiba2.ef301837.jpg",
     "static/media/matopiba3.jpg": "/viz-portfolio/static/media/matopiba3.e3c0a566.jpg",
+    "static/media/radial.png": "/viz-portfolio/static/media/radial.43576173.png",
     "static/media/stock-chart0.jpg": "/viz-portfolio/static/media/stock-chart0.8c906a1e.jpg",
     "static/media/stock-chart1.jpg": "/viz-portfolio/static/media/stock-chart1.7bf42337.jpg",
     "static/media/stock-chart2.jpg": "/viz-portfolio/static/media/stock-chart2.739a5505.jpg",
@@ -34,9 +35,9 @@
     "static/media/voronoi0.jpg": "/viz-portfolio/static/media/voronoi0.1097af7f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.93e17e05.js",
-    "static/js/2.db9e1ad9.chunk.js",
-    "static/css/main.6e605d1f.chunk.css",
-    "static/js/main.9fd16503.chunk.js"
+    "static/js/runtime-main.5ababa92.js",
+    "static/js/2.147f17af.chunk.js",
+    "static/css/main.fea5cb3a.chunk.css",
+    "static/js/main.67b70508.chunk.js"
   ]
 }
