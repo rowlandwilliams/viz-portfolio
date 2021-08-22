@@ -13,13 +13,7 @@ export const projectData = [
   {
     imgName: "supernova",
     projectTitle: "Supernova AI Discovery",
-    projectStack: [
-      "React",
-      "TypeScript",
-      "Storybook",
-      "d3.js",
-      "Three.js"
-    ],
+    projectStack: ["React", "TypeScript", "Storybook", "d3.js", "Three.js"],
     backgroundColor: "globe-blue",
     projectDescription:
       "Discovery work for Supernova AI, a new visualisation platform for Environmental, Social and Governance (ESG) investment data. ",
@@ -70,7 +64,7 @@ export const projectData = [
     imgName: "co2widget",
     projectTitle: "Reporting Carbon Dioxide levels",
     projectStack: ["Frontend development", "PHP"],
-    backgroundColor: "green-200",
+    backgroundColor: "globe-blue",
     projectUrl: "https://co2widget.com/",
     projectDescription:
       "An widget displaying daily atmospheric Carbon Dioxide levels",
