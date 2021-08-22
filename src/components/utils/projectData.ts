@@ -31,7 +31,7 @@ export const projectData = [
       "https://medium.com/trase/matopiba-brazils-soy-frontier-9ad4cc6fe2d9",
     repoUrl: "https://github.com/rowlandwilliams/matopiba-vis",
     projectDescription:
-      "Visual blog exploring the rapid expansion of soy exports from the Matopiba region of Brazil",
+      "Visualisations and copy for a blog exploring the rapid expansion of soy exports from the Matopiba region of Brazil. Global Canopy is an Oxford-based think-tank targeting the market forces destroying tropical forests.",
     projectBullets: [
       "Created SVG based visualisations.",
       "Wrote copy and performed data analyses in R.",
