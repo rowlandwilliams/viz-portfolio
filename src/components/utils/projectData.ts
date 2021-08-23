@@ -45,7 +45,7 @@ export const projectData = [
     projectDescription:
       "Flow is an interactive tool that allows users to visualise flows of sugar in Southern and Eastern Africa.",
     projectBullets: [
-      "Build for Kenyan agricultural research company Kwolco Ltd.",
+      "Built for Kenyan agricultural research company Kwolco Ltd.",
       "Design and full-stack development.",
     ],
   },
