@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ImgData } from "../../types";
-import { projectData } from "../utils/projectData";
+import { ImgData } from "../../../types";
+import { projectData } from "../../utils/projectData";
 import { Project } from "./Project/Project";
 
 interface Props {

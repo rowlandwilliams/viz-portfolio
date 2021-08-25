@@ -1,5 +1,5 @@
-import { ImgData } from "../../../types";
 import classNames from "classnames";
+import { ImgData } from "../../../../../types";
 
 interface Props {
   imgIndex: number;

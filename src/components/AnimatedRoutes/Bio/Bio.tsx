@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import radial from "../../assets/img/radial.png";
+import radial from "../../../assets/img/radial.png";
 
 interface Client {
   name: string;

@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
-import { ImgData } from "../../types";
-import { PageTemplate } from "../PageTemplate/PageTemplate";
-import { projectData } from "../utils/projectData";
+import { ImgData } from "../../../types";
+import { projectData } from "../../utils/projectData";
+import { PageTemplate } from "./PageTemplate/PageTemplate";
 
 interface Props {
   allImages: ImgData[];

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { ImgData } from "../../types";
-import { projectData } from "../utils/projectData";
+import { ImgData } from "../../../../types";
+import { projectData } from "../../../utils/projectData";
 import { ImageSlider } from "./ImageSlider/ImageSlider";
 import { MainImage } from "./MainImage/MainImage";
 import { StackLabels } from "./StackLabels/StackLabels";
