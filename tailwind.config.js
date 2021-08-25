@@ -50,7 +50,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: { stroke: ["hover", "focus"] },
   },
   plugins: [
     require("@tailwindcss/forms"), // import tailwind forms
