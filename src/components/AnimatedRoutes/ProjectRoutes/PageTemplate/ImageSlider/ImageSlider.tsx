@@ -8,7 +8,7 @@ interface Props {
   backgroundColor: string;
 }
 const sliderHeight = 40;
-const circleGroupWidth = 40;
+const circleGroupWidth = 30;
 const circlePadding = 4;
 const outerCircleRadius = circleGroupWidth / 2 - circlePadding;
 const innerCircleRadius = circleGroupWidth / 4 - circlePadding;
