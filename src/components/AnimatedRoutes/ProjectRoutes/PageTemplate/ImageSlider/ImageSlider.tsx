@@ -1,8 +1,9 @@
-import classNames from "classnames";
+import { motion } from "framer-motion";
 import { ImgData } from "../../../../../types";
+import { CircleGroup } from "./CircleGroup/CircleGroup";
 
 interface Props {
-  imgIndex: number;
+  activeImgIndex: number;
   projectImages: ImgData[];
   handleImageClick: (i: number) => void;
   backgroundColor: string;
@@ -14,53 +15,21 @@ const outerCircleRadius = circleGroupWidth / 2 - circlePadding;
 const innerCircleRadius = circleGroupWidth / 4 - circlePadding;
 
 export const ImageSlider = ({
-  imgIndex,
+  activeImgIndex,
   projectImages,
   handleImageClick,
   backgroundColor,
 }: Props) => {
   const nImages = projectImages.length;
-  console.log(imgIndex);
   return (
     <svg width={circleGroupWidth * nImages + "px"} height={sliderHeight}>
       {projectImages.map((image, i) => (
-        <g onClick={() => handleImageClick(i)} className="cursor-pointer">
-          <circle
-            cx={circleGroupWidth * i + circleGroupWidth / 2}
-            cy={sliderHeight / 2}
-            r={imgIndex === i ? outerCircleRadius : outerCircleRadius * 0.75}
-            fill-opacity={0}
-            className={classNames("stroke-current", {
-              ["text-" + backgroundColor]: imgIndex === i,
-              "text-black text-opacity-60": imgIndex !== i,
-            })}
-          >
-            {imgIndex === i && (
-              <animate
-                attributeName="r"
-                begin="0s"
-                dur="3s"
-                repeatCount={1}
-                from={outerCircleRadius * 0.75}
-                to={outerCircleRadius}
-              />
-            )}
-          </circle>
-          <circle
-            cx={circleGroupWidth * i + circleGroupWidth / 2}
-            cy={sliderHeight / 2}
-            r={innerCircleRadius}
-            fill="red"
-            className={classNames(
-              "fill-current",
-              {
-                ["text-" + backgroundColor]: imgIndex === i,
-                "text-black text-opacity-60": imgIndex !== i,
-              },
-              "hover:text-" + backgroundColor
-            )}
-          ></circle>
-        </g>
+        <CircleGroup
+          i={i}
+          handleImageClick={handleImageClick}
+          activeImgIndex={activeImgIndex}
+          backgroundColor={backgroundColor}
+        />
       ))}
     </svg>
   );

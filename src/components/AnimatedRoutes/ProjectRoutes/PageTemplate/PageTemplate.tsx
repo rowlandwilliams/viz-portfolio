@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { ImgData } from "../../../../types";
 import { projectData } from "../../../utils/projectData";
@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const PageTemplate = ({ projectName, projectImages }: Props) => {
-  const [imgIndex, setImgIndex] = useState(0);
+  const [activeImgIndex, setActiveImgIndex] = useState(0);
 
   const project = projectData.filter(
     (project) => project.imgName === projectName
@@ -31,7 +31,7 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
   } = project;
 
   const handleImageClick = (i: number) => {
-    setImgIndex(i);
+    setActiveImgIndex(i);
   };
 
   return (
@@ -42,7 +42,7 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
       transition={{ duration: 0.5 }}
       className="w-full p-4 mt-20 md:mt-0 md:ml-60 bg-gray-100"
     >
-      <div >
+      <div>
         <div className="flex justify-between items-center mb-4 md:mb-8">
           <div>{projectTitle}</div>
           <StackLabels
@@ -53,11 +53,11 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
         <div className="flex flex-col items-center">
           <MainImage
             projectUrl={projectUrl}
-            mainImgSrc={projectImages[imgIndex].module.default}
+            mainImgSrc={projectImages[activeImgIndex].module.default}
             imgName={imgName}
           />
           <ImageSlider
-            imgIndex={imgIndex}
+            activeImgIndex={activeImgIndex}
             handleImageClick={handleImageClick}
             backgroundColor={backgroundColor}
             projectImages={projectImages}
