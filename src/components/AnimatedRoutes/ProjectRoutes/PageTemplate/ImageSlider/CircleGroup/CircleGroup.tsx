@@ -21,7 +21,6 @@ export const CircleGroup = ({
   backgroundColor,
 }: Props) => {
   const isActive = activeImgIndex === i;
-  console.log(isActive);
   return (
     <g onClick={() => handleImageClick(i)} className="cursor-pointer">
       <motion.circle

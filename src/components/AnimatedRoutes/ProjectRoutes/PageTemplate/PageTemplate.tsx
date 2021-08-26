@@ -56,12 +56,14 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
             mainImgSrc={projectImages[activeImgIndex].module.default}
             imgName={imgName}
           />
-          <ImageSlider
-            activeImgIndex={activeImgIndex}
-            handleImageClick={handleImageClick}
-            backgroundColor={backgroundColor}
-            projectImages={projectImages}
-          />
+          {projectImages.length > 1 && (
+            <ImageSlider
+              activeImgIndex={activeImgIndex}
+              handleImageClick={handleImageClick}
+              backgroundColor={backgroundColor}
+              projectImages={projectImages}
+            />
+          )}
           <div className="px-2 text-center">
             <div className="mt-8 mb-4">{projectDescription}</div>
             <div className="text-sm my-4">
