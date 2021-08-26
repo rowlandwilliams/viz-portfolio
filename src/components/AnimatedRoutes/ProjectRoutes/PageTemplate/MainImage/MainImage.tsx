@@ -21,7 +21,6 @@ export const MainImage = ({ projectUrl, mainImgSrc, imgName }: Props) => {
             className="rounded-md"
           />
         </AnimatePresence>
-        {/* <img src={mainImgSrc} alt={imgName} className="w-full py-4" /> */}
       </div>
     </a>
   );

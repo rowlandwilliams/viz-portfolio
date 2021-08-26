@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { ImgData } from "../../../../../types";
 import { CircleGroup } from "./CircleGroup/CircleGroup";
 
@@ -10,9 +9,6 @@ interface Props {
 }
 const sliderHeight = 40;
 const circleGroupWidth = 30;
-const circlePadding = 4;
-const outerCircleRadius = circleGroupWidth / 2 - circlePadding;
-const innerCircleRadius = circleGroupWidth / 4 - circlePadding;
 
 export const ImageSlider = ({
   activeImgIndex,
