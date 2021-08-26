@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 interface Props {
   i: number;
@@ -21,8 +22,15 @@ export const CircleGroup = ({
   backgroundColor,
 }: Props) => {
   const isActive = activeImgIndex === i;
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <g onClick={() => handleImageClick(i)} className="cursor-pointer">
+    <g
+      onClick={() => handleImageClick(i)}
+      className={isActive ? "pointer-events-none" : "cursor-pointer"}
+      onMouseOver={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <motion.circle
         animate={{ r: isActive ? outerCircleRadius : outerCircleRadius * 0.75 }}
         transition={{ duration: 0.5 }}
@@ -30,8 +38,8 @@ export const CircleGroup = ({
         cy={sliderHeight / 2}
         fillOpacity={0}
         className={classNames("stroke-current", {
-          ["text-" + backgroundColor]: activeImgIndex === i,
-          "text-black text-opacity-60": activeImgIndex !== i,
+          ["text-" + backgroundColor]: isActive,
+          "text-black text-opacity-60": !isActive || isHovered,
         })}
       ></motion.circle>
       <circle
@@ -39,14 +47,10 @@ export const CircleGroup = ({
         cy={sliderHeight / 2}
         r={innerCircleRadius}
         fill="red"
-        className={classNames(
-          "fill-current",
-          {
-            ["text-" + backgroundColor]: activeImgIndex === i,
-            "text-black text-opacity-60": activeImgIndex !== i,
-          },
-          "hover:text-" + backgroundColor
-        )}
+        className={classNames("fill-current", {
+          ["text-" + backgroundColor]: isActive || isHovered,
+          "text-black text-opacity-60": !isActive && !isHovered,
+        })}
       ></circle>
     </g>
   );
