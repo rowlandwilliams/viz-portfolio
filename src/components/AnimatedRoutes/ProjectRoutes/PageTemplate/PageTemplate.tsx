@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { ImgData } from "../../../../types";
 import { projectData } from "../../../utils/projectData";
-import { ImageSlider } from "./ImageSlider/ImageSlider";
-import { MainImage } from "./MainImage/MainImage";
 import { StackLabels } from "./StackLabels/StackLabels";
 import { ThirdPartyIcons } from "./ThirdPartyIcons/ThirdPartyIcons";
+import { Chevrons } from "./Chevrons/Chevrons";
+import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
+import { MainImage } from "./ProjectPageImages/MainImage/MainImage";
+import { ImageSlider } from "./ProjectPageImages/ImageSlider/ImageSlider";
 
 interface Props {
   projectName: string;
@@ -40,30 +42,29 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full p-4 mt-20 md:mt-0 md:ml-60 bg-gray-100"
+      className="w-full p-4 mt-20 md:mt-0 md:ml-60 bg-white"
     >
-      <div>
+      <div className="relative">
+        <Chevrons />
         <div className="flex justify-between items-center mb-4 md:mb-8">
-          <div>{projectTitle}</div>
+          <div className="font-tt-interfaces-demi text-3xl text-gray-800">
+            {projectTitle}
+          </div>
           <StackLabels
             projectStack={projectStack}
             backgroundColor={backgroundColor}
           />
         </div>
         <div className="flex flex-col items-center">
-          <MainImage
+          <ProjectPageImages
+            projectImages={projectImages}
             projectUrl={projectUrl}
             mainImgSrc={projectImages[activeImgIndex].module.default}
             imgName={imgName}
+            activeImgIndex={activeImgIndex}
+            handleImageClick={handleImageClick}
+            backgroundColor={backgroundColor}
           />
-          {projectImages.length > 1 && (
-            <ImageSlider
-              activeImgIndex={activeImgIndex}
-              handleImageClick={handleImageClick}
-              backgroundColor={backgroundColor}
-              projectImages={projectImages}
-            />
-          )}
           <div className="px-2 text-center">
             <div className="mt-8 mb-4">{projectDescription}</div>
             <div className="text-sm my-4">

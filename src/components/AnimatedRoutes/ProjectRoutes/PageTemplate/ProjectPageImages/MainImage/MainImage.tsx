@@ -6,10 +6,10 @@ interface Props {
   imgName: string;
 }
 
-export const MainImage = ({ projectUrl, mainImgSrc, imgName }: Props) => {
+export const MainImage = ({ projectUrl, mainImgSrc }: Props) => {
   return (
     <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-      <div className="rounded-md h-full">
+      <div className="rounded-md h-full flex items-center">
         <AnimatePresence exitBeforeEnter>
           <motion.img
             key={mainImgSrc}

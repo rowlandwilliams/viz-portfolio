@@ -9,17 +9,13 @@ export const Header = ({ handleBurgerClick }: Props) => {
   return (
     <>
       <Link to="/">
-          <div className="flex justify-between items-center">
-            <div>
-              <div className="text-xl font-libre-franklin">
-                Rowland Williams
-              </div>
-            </div>
-            <BurgerIcon handleBurgerClick={handleBurgerClick} />
+        <div className="flex justify-between items-center">
+          <div>
+            <div className="text-xl">Rowland Williams</div>
           </div>
-          <div className="text-sm text-gray-800">
-            Data Visualisation Engineer
-          </div>
+          <BurgerIcon handleBurgerClick={handleBurgerClick} />
+        </div>
+        <div className="text-sm text-gray-800">Data Visualisation Engineer</div>
       </Link>
     </>
   );

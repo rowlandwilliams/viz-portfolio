@@ -13,7 +13,7 @@ const allImages: ImgData[] = importAllImages(
 );
 const App = () => {
   return (
-    <div className="relative flex flex-col md:flex-row font-libre-franklin bg-gray-100">
+    <div className="relative flex flex-col md:flex-row font-tt-interfaces bg-gray-100">
       <Router basename={process.env.PUBLIC_URL}>
         <NavBar />
         <AnimatedRoutes allImages={allImages} />

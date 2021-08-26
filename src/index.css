@@ -12,6 +12,21 @@
     font-family: "LibreFranklin";
     src: url(./fonts/LibreFranklin-Regular.ttf);
   }
+
+  @font-face {
+    font-family: "TTInterfaces-Regular";
+    src: url(./fonts/TTInterfaces-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "TTInterfaces-Demi";
+    src: url(./fonts/TTInterfaces-DemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: "TTInterfaces-Bold";
+    src: url(./fonts/TTInterfaces-Bold.ttf);
+  }
 }
 
 body {

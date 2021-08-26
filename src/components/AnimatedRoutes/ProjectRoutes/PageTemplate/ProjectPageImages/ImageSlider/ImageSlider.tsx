@@ -1,4 +1,4 @@
-import { ImgData } from "../../../../../types";
+import { ImgData } from "../../../../../../types";
 import { CircleGroup } from "./CircleGroup/CircleGroup";
 
 interface Props {
