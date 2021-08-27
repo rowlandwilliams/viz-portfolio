@@ -33,7 +33,6 @@ const App = () => {
     setMobileMenuIsVisible(menuIsVisible);
   };
 
-  console.log(desktopMenuIsVisible);
   return (
     <div className="relative flex flex-col md:flex-row font-tt-interfaces">
       <Router basename={process.env.PUBLIC_URL}>

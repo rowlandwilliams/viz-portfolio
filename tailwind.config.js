@@ -1,7 +1,31 @@
 const colors = require("tailwindcss/colors");
+
+const customColors = [
+  "pink-500",
+  "blue-500",
+  "green-300",
+  "indigo-500",
+  "purple-300",
+  "blue-300",
+  "red-200",
+  "yellow-300",
+];
+
+const safeColors = customColors
+  .map((col) => [
+    "bg-" + col,
+    "text-" + col,
+    "hover:border-" + col,
+    "hover:text-" + col,
+  ])
+  .flat();
+
 module.exports = {
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    options: {
+      safelist: safeColors,
+    },
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
