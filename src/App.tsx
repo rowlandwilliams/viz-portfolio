@@ -22,29 +22,28 @@ const backgroundColors = projectData
   .slice(0, 2);
 
 const App = () => {
-  const [desktopBurgerIsVisible, setDesktopBurgerIsVisible] = useState(true);
-  const handleDesktopBurgerClick = () => {
-    setDesktopBurgerIsVisible(!desktopBurgerIsVisible);
+  const [desktopMenuIsVisible, setDesktopMenuIsVisible] = useState(false);
+  const handleDesktopMenuClick = () => {
+    setDesktopMenuIsVisible(!desktopMenuIsVisible);
   };
-  console.log(desktopBurgerIsVisible);
+  console.log(desktopMenuIsVisible);
   return (
     <div className="relative flex flex-col md:flex-row font-tt-interfaces">
       <Router basename={process.env.PUBLIC_URL}>
         <NavBar
-          desktopBurgerIsVisible={desktopBurgerIsVisible}
-          handleDesktopBurgerClick={handleDesktopBurgerClick}
+          desktopMenuIsVisible={desktopMenuIsVisible}
+          handleDesktopMenuClick={handleDesktopMenuClick}
           backgroundColors={backgroundColors}
         />
         <div
           className={classNames(
-            "md:ml-24 pt-4 transition-width ease-in duration-150",
+            "md:ml-24 pt-4 transition-all ease-in duration-150 overflow-hidden",
             {
-              "w-28 overflow-visible px-4 ": !desktopBurgerIsVisible,
-              "w-0 overflow-hidden px-0": desktopBurgerIsVisible,
+              "w-28 overflow-visible px-4 opacity-100": desktopMenuIsVisible,
+              "w-0 px-0 opacity-0": !desktopMenuIsVisible,
             },
             "leading-5 text-sm text-white box-border bg-" + backgroundColors[0]
           )}
-          style={{ transition: "padding 150ms" }}
         >
           <div className="font-tt-interfaces-demi text-black">
             <div>Data</div>

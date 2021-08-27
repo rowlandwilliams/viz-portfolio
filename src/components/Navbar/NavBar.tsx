@@ -5,14 +5,14 @@ import { DesktopBurger } from "./DesktopBurger/DesktopBurger";
 import { DesktopHeader } from "./DesktopHeader/DesktopHeader";
 
 interface Props {
-  desktopBurgerIsVisible: boolean;
-  handleDesktopBurgerClick: () => void;
+  desktopMenuIsVisible: boolean;
+  handleDesktopMenuClick: () => void;
   backgroundColors: string[];
 }
 
 export const NavBar = ({
-  desktopBurgerIsVisible,
-  handleDesktopBurgerClick,
+  desktopMenuIsVisible,
+  handleDesktopMenuClick,
   backgroundColors,
 }: Props) => {
   const [burgerIsVisible, setBurgerIsVisible] = useState(true);
@@ -26,11 +26,11 @@ export const NavBar = ({
         <div className="relative ">
           <div>
             <DesktopBurger
-              handleBurgerClick={handleDesktopBurgerClick}
-              burgerIsVisible={desktopBurgerIsVisible}
+              handleBurgerClick={handleDesktopMenuClick}
+              menuIsVisible={desktopMenuIsVisible}
               backgroundColors={backgroundColors}
             />
-            <DesktopHeader burgerIsVisible={desktopBurgerIsVisible} />
+            <DesktopHeader menuIsVisible={desktopMenuIsVisible} />
           </div>
         </div>
 
