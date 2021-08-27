@@ -8,7 +8,7 @@ import { ImgData } from "./types";
 import { AnimatedRoutes } from "./components/AnimatedRoutes/AnimatedRoutes";
 import classNames from "classnames";
 import { projectData } from "./components/utils/projectData";
-import { DesktopMenu } from "./components/Navbar/DesktopMenu/DesktopMenu";
+import { DesktopMenuLinks } from "./components/DesktopMenu/DesktopMenuLinks/DesktopMenuLinks";
 
 const allImages: ImgData[] = importAllImages(
   require.context("./assets/img/"),
@@ -23,8 +23,9 @@ const backgroundColors = projectData
 
 const App = () => {
   const [desktopMenuIsVisible, setDesktopMenuIsVisible] = useState(false);
-  const handleDesktopMenuClick = () => {
-    setDesktopMenuIsVisible(!desktopMenuIsVisible);
+
+  const handleDesktopBurgerClick = (menuIsVisible: boolean) => {
+    setDesktopMenuIsVisible(menuIsVisible);
   };
   console.log(desktopMenuIsVisible);
   return (
@@ -32,7 +33,7 @@ const App = () => {
       <Router basename={process.env.PUBLIC_URL}>
         <NavBar
           desktopMenuIsVisible={desktopMenuIsVisible}
-          handleDesktopMenuClick={handleDesktopMenuClick}
+          handleDesktopBurgerClick={handleDesktopBurgerClick}
           backgroundColors={backgroundColors}
         />
         <div
@@ -50,9 +51,13 @@ const App = () => {
             <div>Visualisation</div>
             <div>Engineer</div>
           </div>
-          <DesktopMenu />
+          <DesktopMenuLinks closeMenuOnLinkClick={handleDesktopBurgerClick} />
         </div>
-        <AnimatedRoutes allImages={allImages} />
+        <AnimatedRoutes
+          allImages={allImages}
+          desktopMenuIsVisible={desktopMenuIsVisible}
+          handleDesktopBurgerClick={handleDesktopBurgerClick}
+        />
       </Router>
     </div>
   );

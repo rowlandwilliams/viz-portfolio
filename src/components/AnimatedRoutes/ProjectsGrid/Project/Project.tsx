@@ -7,6 +7,7 @@ interface Props {
   projectStack: string[];
   backgroundColor: string;
   projectThumbnail: string;
+  handleDesktopBurgerClick: (menuIsVisible: boolean) => void;
 }
 
 export const Project = ({
@@ -15,9 +16,10 @@ export const Project = ({
   projectStack,
   backgroundColor,
   projectThumbnail,
+  handleDesktopBurgerClick,
 }: Props) => {
   return (
-    <div className="mx-2 mb-4">
+    <div className="mx-2 mb-4" onClick={() => handleDesktopBurgerClick(false)}>
       <Link to={imgName}>
         <div className="relative">
           <img src={projectThumbnail} alt={imgName} />

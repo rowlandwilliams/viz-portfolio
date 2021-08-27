@@ -1,12 +1,20 @@
 import { Link } from "react-router-dom";
 
-export const DesktopMenu = () => {
+interface Props {
+  closeMenuOnLinkClick: (menuIsVisible: boolean) => void;
+}
+
+export const DesktopMenuLinks = ({ closeMenuOnLinkClick }: Props) => {
   return (
     <div className="hidden md:block mt-4 text-sm ">
-      <Link to="/">
+      <Link to="/" onClick={() => closeMenuOnLinkClick(false)}>
         <div className="hover:text-black">Projects</div>
       </Link>
-      <Link to="/about" className="hover:text-black">
+      <Link
+        to="/about"
+        className="hover:text-black"
+        onClick={() => closeMenuOnLinkClick(false)}
+      >
         <div className="hover:text-black">Bio</div>
       </Link>
       <a

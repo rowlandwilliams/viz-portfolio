@@ -4,7 +4,7 @@ import { CrossIcon } from "../MobileMenu/CrossIcon/CrossIcon";
 
 interface Props {
   menuIsVisible: boolean;
-  handleBurgerClick: () => void;
+  handleBurgerClick: (menuIsVisible: boolean) => void;
   backgroundColors: string[];
 }
 
@@ -22,13 +22,9 @@ export const DesktopBurger = ({
           ["bg-" + backgroundColors[1]]: menuIsVisible,
         }
       )}
-      onClick={handleBurgerClick}
+      onClick={() => handleBurgerClick(!menuIsVisible)}
     >
-      {menuIsVisible ? (
-        <CrossIcon dimension={25} />
-      ) : (
-        <BurgerIcon handleBurgerClick={handleBurgerClick} />
-      )}
+      {menuIsVisible ? <CrossIcon dimension={25} /> : <BurgerIcon />}
     </div>
   );
 };

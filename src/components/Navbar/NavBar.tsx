@@ -6,13 +6,13 @@ import { DesktopHeader } from "./DesktopHeader/DesktopHeader";
 
 interface Props {
   desktopMenuIsVisible: boolean;
-  handleDesktopMenuClick: () => void;
+  handleDesktopBurgerClick: (menuIsVisible: boolean) => void;
   backgroundColors: string[];
 }
 
 export const NavBar = ({
   desktopMenuIsVisible,
-  handleDesktopMenuClick,
+  handleDesktopBurgerClick,
   backgroundColors,
 }: Props) => {
   const [burgerIsVisible, setBurgerIsVisible] = useState(true);
@@ -23,10 +23,10 @@ export const NavBar = ({
   return (
     <div className="fixed flex flex-col justify-between items-center w-screen md:w-24 h-20 md:h-screen p-4 bg-white z-30">
       <div>
-        <div className="relative ">
+        <div className="relative">
           <div>
             <DesktopBurger
-              handleBurgerClick={handleDesktopMenuClick}
+              handleBurgerClick={handleDesktopBurgerClick}
               menuIsVisible={desktopMenuIsVisible}
               backgroundColors={backgroundColors}
             />

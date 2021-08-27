@@ -5,9 +5,15 @@ import { Project } from "./Project/Project";
 
 interface Props {
   allImages: ImgData[];
+  desktopMenuIsVisible: boolean;
+  handleDesktopBurgerClick: (menuIsVisible: boolean) => void;
 }
 
-export const ProjectsGrid = ({ allImages }: Props) => {
+export const ProjectsGrid = ({
+  allImages,
+  desktopMenuIsVisible,
+  handleDesktopBurgerClick,
+}: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -32,6 +38,7 @@ export const ProjectsGrid = ({ allImages }: Props) => {
                       return imageObj.slug.match(re);
                     })[0].module.default
                   }
+                  handleDesktopBurgerClick={handleDesktopBurgerClick}
                 />
               )
           )}
@@ -52,6 +59,7 @@ export const ProjectsGrid = ({ allImages }: Props) => {
                       return imageObj.slug.match(re);
                     })[0].module.default
                   }
+                  handleDesktopBurgerClick={handleDesktopBurgerClick}
                 />
               )
           )}
