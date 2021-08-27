@@ -1,5 +1,5 @@
 interface Props {
-  handleBurgerClick: () => void;
+  handleBurgerClick?: () => void;
 }
 
 export const CrossIcon = ({ handleBurgerClick }: Props) => {

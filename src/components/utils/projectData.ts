@@ -3,7 +3,7 @@ export const projectData = [
     imgName: "stock-chart",
     projectTitle: "Stock chart component",
     projectStack: ["React", "TypeScript", "d3.js", "Redux"],
-    backgroundColor: "stock-pink",
+    backgroundColor: "pink-500",
     projectUrl: "https://rowlandwilliams.github.io/stock-chart/",
     repoUrl: "https://github.com/rowlandwilliams/stock-chart",
     projectDescription:
@@ -14,7 +14,7 @@ export const projectData = [
     imgName: "supernova",
     projectTitle: "Supernova AI Discovery",
     projectStack: ["React", "TypeScript", "Storybook", "d3.js", "Three.js"],
-    backgroundColor: "globe-blue",
+    backgroundColor: "blue-500",
     projectDescription:
       "Discovery work for Supernova AI, a new visualisation platform for Environmental, Social and Governance (ESG) investment data. ",
     projectBullets: [
@@ -26,7 +26,7 @@ export const projectData = [
     imgName: "matopiba",
     projectTitle: "Visualisations for Global Canopy",
     projectStack: ["R", "ggplot2"],
-    backgroundColor: "matopiba-green",
+    backgroundColor: "green-300",
     projectUrl:
       "https://medium.com/trase/matopiba-brazils-soy-frontier-9ad4cc6fe2d9",
     repoUrl: "https://github.com/rowlandwilliams/matopiba-vis",
@@ -41,7 +41,7 @@ export const projectData = [
     imgName: "flow",
     projectTitle: "FLOW: a supply chain mapping tool for African sugar",
     projectStack: ["React", "NodeJS", "deck.gl", "PostgreSQL"],
-    backgroundColor: "flow-purple",
+    backgroundColor: "indigo-500",
     projectDescription:
       "Flow is an interactive tool that allows users to visualise flows of sugar in Southern and Eastern Africa.",
     projectBullets: [
@@ -53,7 +53,7 @@ export const projectData = [
     imgName: "cycle-map",
     projectTitle: "cycle-map",
     projectStack: ["React", "Redux", "deck.gl", "Google Maps"],
-    backgroundColor: "cycle-aqua",
+    backgroundColor: "purple-300",
     projectUrl: "https://cycle-map.herokuapp.com/",
     repoUrl: "https://github.com/rowlandwilliams/cycle-map",
     projectDescription:
@@ -64,7 +64,7 @@ export const projectData = [
     imgName: "co2widget",
     projectTitle: "Reporting Carbon Dioxide levels",
     projectStack: ["Frontend development", "PHP"],
-    backgroundColor: "globe-blue",
+    backgroundColor: "blue-300",
     projectUrl: "https://co2widget.com/",
     projectDescription:
       "An widget displaying daily atmospheric Carbon Dioxide levels",
@@ -77,7 +77,7 @@ export const projectData = [
     imgName: "farmingthefuture",
     projectTitle: "Farming the Future Network",
     projectStack: ["d3.js"],
-    backgroundColor: "matopiba-green",
+    backgroundColor: "red-200",
     projectDescription:
       "An interactive network visualisation for Farming the Future, UK",
     projectBullets: [
@@ -88,7 +88,7 @@ export const projectData = [
     imgName: "voronoi",
     projectTitle: "Voronoi fractal generator",
     projectStack: ["React", "d3.js"],
-    backgroundColor: "voronoi-yellow",
+    backgroundColor: "yellow-300",
     projectUrl: "https://rowlandwilliams.github.io/voronoi/",
     repoUrl: "https://github.com/rowlandwilliams/voronoi",
     projectDescription: "Generate randomly coloured voronoi fractals",

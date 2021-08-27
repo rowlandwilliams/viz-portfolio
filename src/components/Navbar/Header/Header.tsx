@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BurgerIcon } from "./BurgerIcon/BurgerIcon";
+import { MobileBurger } from "../MobileBurger/MobileBurger";
 
 interface Props {
   handleBurgerClick: () => void;
@@ -13,7 +13,7 @@ export const Header = ({ handleBurgerClick }: Props) => {
           <div>
             <div className="text-xl">Rowland Williams</div>
           </div>
-          <BurgerIcon handleBurgerClick={handleBurgerClick} />
+          <MobileBurger handleBurgerClick={handleBurgerClick} />
         </div>
         <div className="text-sm text-gray-800">Data Visualisation Engineer</div>
       </Link>
