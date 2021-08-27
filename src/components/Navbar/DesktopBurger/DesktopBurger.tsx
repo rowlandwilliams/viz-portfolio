@@ -6,26 +6,23 @@ import { CrossIcon } from "../MobileMenu/CrossIcon/CrossIcon";
 interface Props {
   burgerIsVisible: boolean;
   handleBurgerClick: () => void;
+  backgroundColors: string[];
 }
-
-// select 2 random bg colors
-const backgroundColors = projectData
-  .map((project) => project.backgroundColor)
-  .sort(() => 0.5 - Math.random())
-  .slice(0, 2);
 
 export const DesktopBurger = ({
   burgerIsVisible,
   handleBurgerClick,
+  backgroundColors,
 }: Props) => {
   return (
     <div
       className={classNames(
-        "hidden md:flex justify-center items-center w-16 h-16 p-4 rounded-full",
+        "hidden md:flex justify-center items-center w-16 h-16 p-4 rounded-full cursor-pointer",
         {
           ["bg-" + backgroundColors[0]]: burgerIsVisible,
           ["bg-" + backgroundColors[1]]: !burgerIsVisible,
-        }
+        },
+        "hover:bg-opacity-60"
       )}
       onClick={handleBurgerClick}
     >

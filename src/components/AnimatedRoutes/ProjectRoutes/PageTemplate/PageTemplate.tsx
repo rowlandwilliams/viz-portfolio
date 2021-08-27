@@ -6,8 +6,6 @@ import { StackLabels } from "./StackLabels/StackLabels";
 import { ThirdPartyIcons } from "./ThirdPartyIcons/ThirdPartyIcons";
 import { Chevrons } from "./Chevrons/Chevrons";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
-import { MainImage } from "./ProjectPageImages/MainImage/MainImage";
-import { ImageSlider } from "./ProjectPageImages/ImageSlider/ImageSlider";
 
 interface Props {
   projectName: string;
@@ -42,7 +40,7 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full p-4 mt-20 md:mt-0 md:ml-60 bg-white"
+      className="w-full p-4 mt-20 md:mt-0 bg-white"
     >
       <div className="relative">
         <Chevrons />

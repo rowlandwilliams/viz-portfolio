@@ -21,7 +21,7 @@ export const Bio = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full h-screen p-4 mt-20 md:mt-0 md:ml-60 text-sm"
+      className="w-full h-screen p-4 mt-20 md:mt-0 text-sm"
     >
       <div>
         <div className="mb-4">
