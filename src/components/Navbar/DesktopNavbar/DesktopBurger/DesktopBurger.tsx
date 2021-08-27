@@ -1,6 +1,6 @@
 import classNames from "classnames";
-import { BurgerIcon } from "../Header/BurgerIcon/BurgerIcon";
-import { CrossIcon } from "../MobileMenu/CrossIcon/CrossIcon";
+import { BurgerIcon } from "../../Header/BurgerIcon/BurgerIcon";
+import { CrossIcon } from "../../MobileMenu/CrossIcon/CrossIcon";
 
 interface Props {
   menuIsVisible: boolean;

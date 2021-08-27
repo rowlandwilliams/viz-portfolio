@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { DesktopNavbar } from "./DesktopNavbar/DesktopNavbar";
 
 interface Props {

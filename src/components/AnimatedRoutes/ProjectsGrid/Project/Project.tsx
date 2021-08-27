@@ -19,7 +19,10 @@ export const Project = ({
   handleDesktopBurgerClick,
 }: Props) => {
   return (
-    <div className="mx-2 mb-4" onClick={() => handleDesktopBurgerClick(false)}>
+    <div
+      className="mx-2 mb-4 rounded-md overflow-hidden"
+      onClick={() => handleDesktopBurgerClick(false)}
+    >
       <Link to={imgName}>
         <div className="relative">
           <img src={projectThumbnail} alt={imgName} />

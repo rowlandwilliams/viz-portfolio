@@ -1,6 +1,6 @@
-import { DesktopBurger } from "../DesktopBurger/DesktopBurger";
-import { DesktopHeader } from "../DesktopHeader/DesktopHeader";
+import { DesktopBurger } from "./DesktopBurger/DesktopBurger";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
+import { DesktopHeader } from "./DesktopHeader/DesktopHeader";
 
 interface Props {
   desktopMenuIsVisible: boolean;
