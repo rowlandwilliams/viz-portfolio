@@ -16,7 +16,7 @@ export const DesktopBurger = ({
   return (
     <div
       className={classNames(
-        "hidden md:flex justify-center items-center w-16 h-16 p-4 rounded-full cursor-pointer",
+        "flex justify-center items-center w-16 h-16 p-4 rounded-full cursor-pointer",
         {
           ["bg-" + backgroundColors[0]]: !menuIsVisible,
           ["bg-" + backgroundColors[1]]: menuIsVisible,

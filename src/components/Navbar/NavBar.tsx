@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { MobileMenu } from "./MobileMenu/MobileMenu";
-import { SocialIcons } from "./SocialIcons/SocialIcons";
-import { DesktopBurger } from "./DesktopBurger/DesktopBurger";
-import { DesktopHeader } from "./DesktopHeader/DesktopHeader";
+
+import { DesktopNavbar } from "./DesktopNavbar/DesktopNavbar";
 
 interface Props {
   desktopMenuIsVisible: boolean;
@@ -21,29 +19,12 @@ export const NavBar = ({
   };
 
   return (
-    <div className="fixed flex flex-col justify-between items-center w-screen md:w-24 h-20 md:h-screen p-4 bg-white z-30">
-      <div>
-        <div className="relative">
-          <div>
-            <DesktopBurger
-              handleBurgerClick={handleDesktopBurgerClick}
-              menuIsVisible={desktopMenuIsVisible}
-              backgroundColors={backgroundColors}
-            />
-            <DesktopHeader menuIsVisible={desktopMenuIsVisible} />
-          </div>
-        </div>
-
-        {/* <Header handleBurgerClick={handleBurgerClick} /> */}
-        <MobileMenu
-          burgerIsVisible={burgerIsVisible}
-          handleBurgerClick={handleBurgerClick}
-        />
-        {/* <DesktopMenu /> */}
-      </div>
-      <div className="hidden md:flex">
-        <SocialIcons />
-      </div>
+    <div className="fixed flex justify-between items-center w-screen md:w-24 h-20 md:h-screen p-4 bg-white z-30">
+      <DesktopNavbar
+        desktopMenuIsVisible={desktopMenuIsVisible}
+        handleDesktopBurgerClick={handleDesktopBurgerClick}
+        backgroundColors={backgroundColors}
+      />
     </div>
   );
 };
