@@ -1,16 +1,16 @@
 import classNames from "classnames";
-import { BurgerIcon } from "../../Header/BurgerIcon/BurgerIcon";
-import { CrossIcon } from "../../MobileMenu/CrossIcon/CrossIcon";
+import { BurgerIcon } from "./BurgerIcon/BurgerIcon";
+import { CrossIcon } from "./CrossIcon/CrossIcon";
 
 interface Props {
   menuIsVisible: boolean;
-  handleBurgerClick: (menuIsVisible: boolean) => void;
+  handleIconClick: (menuIsVisible: boolean) => void;
   backgroundColors: string[];
 }
 
-export const DesktopBurger = ({
+export const NavIconSwitch = ({
   menuIsVisible,
-  handleBurgerClick,
+  handleIconClick,
   backgroundColors,
 }: Props) => {
   return (
@@ -22,7 +22,7 @@ export const DesktopBurger = ({
           ["bg-" + backgroundColors[1]]: menuIsVisible,
         }
       )}
-      onClick={() => handleBurgerClick(!menuIsVisible)}
+      onClick={() => handleIconClick(!menuIsVisible)}
     >
       {menuIsVisible ? <CrossIcon dimension={25} /> : <BurgerIcon />}
     </div>

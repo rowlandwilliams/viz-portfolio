@@ -21,7 +21,7 @@ export const ProjectsGrid = ({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="h-auto flex p-4 pb-0 md:p-4 mt-20 md:mt-0">
+      <div className="h-auto flex p-4 pb-0 md:p-4">
         <div className="w-5/12">
           {projectData.map(
             (project, i) =>

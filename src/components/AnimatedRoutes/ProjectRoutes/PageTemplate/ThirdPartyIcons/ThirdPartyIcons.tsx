@@ -1,4 +1,4 @@
-import { Github } from "./Github/Github";
+import { Github } from "../../../../Navbar/Icons/SocialIcons/Github/Github";
 import { SiteLink } from "./SiteLink/SiteLink";
 
 interface Props {

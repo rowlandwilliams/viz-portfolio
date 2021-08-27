@@ -1,5 +1,5 @@
-import { Github } from "../../AnimatedRoutes/ProjectRoutes/PageTemplate/ThirdPartyIcons/Github/Github";
-import { LinkedIn } from "../Icons/LinkedIn/Linkedin";
+import { Github } from "./Github/Github";
+import { LinkedIn } from "./LinkedIn/Linkedin";
 
 export const SocialIcons = () => {
   return (

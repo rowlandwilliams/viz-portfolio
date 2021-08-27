@@ -1,27 +1,31 @@
-import { useState } from "react";
 import { DesktopNavbar } from "./DesktopNavbar/DesktopNavbar";
+import { MobileNavbar } from "./MobileNavbar/MobileNavbar";
 
 interface Props {
   desktopMenuIsVisible: boolean;
-  handleDesktopBurgerClick: (menuIsVisible: boolean) => void;
+  handleDesktopIconClick: (menuIsVisible: boolean) => void;
+  mobileMenuIsVisible: boolean;
+  handleMobileIconClick: (menuIsVisible: boolean) => void;
   backgroundColors: string[];
 }
 
 export const NavBar = ({
   desktopMenuIsVisible,
-  handleDesktopBurgerClick,
+  handleDesktopIconClick,
+  mobileMenuIsVisible,
+  handleMobileIconClick,
   backgroundColors,
 }: Props) => {
-  const [burgerIsVisible, setBurgerIsVisible] = useState(true);
-  const handleBurgerClick = () => {
-    setBurgerIsVisible(!burgerIsVisible);
-  };
-
   return (
-    <div className="fixed flex justify-between items-center w-screen md:w-24 h-20 md:h-screen p-4 bg-white z-30">
+    <div className="fixed flex justify-between items-center w-screen md:w-24 h-20 md:h-screen p-4 z-30">
       <DesktopNavbar
         desktopMenuIsVisible={desktopMenuIsVisible}
-        handleDesktopBurgerClick={handleDesktopBurgerClick}
+        handleIconClick={handleDesktopIconClick}
+        backgroundColors={backgroundColors}
+      />
+      <MobileNavbar
+        mobileMenuIsVisible={mobileMenuIsVisible}
+        handleIconClick={handleMobileIconClick}
         backgroundColors={backgroundColors}
       />
     </div>

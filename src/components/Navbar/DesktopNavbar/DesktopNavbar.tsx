@@ -1,23 +1,23 @@
-import { DesktopBurger } from "./DesktopBurger/DesktopBurger";
-import { SocialIcons } from "../SocialIcons/SocialIcons";
+import { NavIconSwitch } from "../Icons/NavIconSwitch/NavIconSwitch";
+import { SocialIcons } from "../Icons/SocialIcons/SocialIcons";
 import { DesktopHeader } from "./DesktopHeader/DesktopHeader";
 
 interface Props {
   desktopMenuIsVisible: boolean;
-  handleDesktopBurgerClick: (menuIsVisible: boolean) => void;
+  handleIconClick: (menuIsVisible: boolean) => void;
   backgroundColors: string[];
 }
 
 export const DesktopNavbar = ({
   desktopMenuIsVisible,
-  handleDesktopBurgerClick,
+  handleIconClick,
   backgroundColors,
 }: Props) => {
   return (
     <div className="hidden md:flex flex-col md:h-full justify-between items-center">
       <div className="relative">
-        <DesktopBurger
-          handleBurgerClick={handleDesktopBurgerClick}
+        <NavIconSwitch
+          handleIconClick={handleIconClick}
           menuIsVisible={desktopMenuIsVisible}
           backgroundColors={backgroundColors}
         />

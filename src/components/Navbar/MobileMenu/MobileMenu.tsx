@@ -1,53 +1,60 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import { SocialIcons } from "../SocialIcons/SocialIcons";
-import { CrossIcon } from "./CrossIcon/CrossIcon";
+import { SocialIcons } from "../Icons/SocialIcons/SocialIcons";
 
 interface Props {
-  burgerIsVisible: boolean;
-  handleBurgerClick: () => void;
+  menuIsVisible: boolean;
+  closeMenuOnLinkClick: (menuIsVisible: boolean) => void;
+  backgroundColor: string;
 }
 
-export const MobileMenu = ({ burgerIsVisible, handleBurgerClick }: Props) => {
+export const MobileMenu = ({
+  menuIsVisible,
+  closeMenuOnLinkClick,
+  backgroundColor,
+}: Props) => {
   return (
     <div
       className={classNames(
         "md:hidden absolute transition-left duration-300 top-0",
         {
-          "-left-full": burgerIsVisible,
-          "left-0": !burgerIsVisible,
+          "-left-full": !menuIsVisible,
+          "left-0": menuIsVisible,
         },
-        "w-full h-screen p-4 bg-gray-100 z-20 bg-opacity-95"
+        "w-auto h-screen px-4 pt-2  z-20 bg-" + backgroundColor
       )}
     >
       <div className="flex flex-col justify-between h-full">
         <div>
-          <div className="flex justify-between">
-            <div>
-              <Link to="/" onClick={handleBurgerClick}>
-                Projects
-              </Link>
-              <Link
-                to="/about"
-                className="hover:opacity-30"
-                onClick={handleBurgerClick}
-              >
-                <div className="hover:opacity-30">Bio</div>
-              </Link>
+          <div className="font-tt-interfaces-demi text-white text-2xl">
+            <div>Data Visualisation</div>
+          </div>
+          <div className="text-sm pt-2">
+            <div className="flex justify-between">
+              <div>
+                <Link to="/" onClick={() => closeMenuOnLinkClick(false)}>
+                  Projects
+                </Link>
+                <Link
+                  to="/about"
+                  className="hover:opacity-30"
+                  onClick={() => closeMenuOnLinkClick(false)}
+                >
+                  <div className="hover:opacity-30">Bio</div>
+                </Link>
+              </div>
             </div>
 
-            <CrossIcon handleBurgerClick={handleBurgerClick} />
+            <a
+              href="https://rowlandwilliams.github.io/cv/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div className="hover:opacity-30">CV</div>
+            </a>
           </div>
-
-          <a
-            href="https://rowlandwilliams.github.io/cv/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <div className="hover:opacity-30"> CV</div>
-          </a>
         </div>
-        <div className="flex justify-center md:hidden">
+        <div className="flex md:hidden">
           <SocialIcons />
         </div>
       </div>

@@ -23,17 +23,25 @@ const backgroundColors = projectData
 
 const App = () => {
   const [desktopMenuIsVisible, setDesktopMenuIsVisible] = useState(false);
+  const [mobileMenuIsVisible, setMobileMenuIsVisible] = useState(false);
 
   const handleDesktopBurgerClick = (menuIsVisible: boolean) => {
     setDesktopMenuIsVisible(menuIsVisible);
   };
+
+  const handleMobileBurgerClick = (menuIsVisible: boolean) => {
+    setMobileMenuIsVisible(menuIsVisible);
+  };
+
   console.log(desktopMenuIsVisible);
   return (
     <div className="relative flex flex-col md:flex-row font-tt-interfaces">
       <Router basename={process.env.PUBLIC_URL}>
         <NavBar
           desktopMenuIsVisible={desktopMenuIsVisible}
-          handleDesktopBurgerClick={handleDesktopBurgerClick}
+          handleDesktopIconClick={handleDesktopBurgerClick}
+          mobileMenuIsVisible={mobileMenuIsVisible}
+          handleMobileIconClick={handleMobileBurgerClick}
           backgroundColors={backgroundColors}
         />
         <div

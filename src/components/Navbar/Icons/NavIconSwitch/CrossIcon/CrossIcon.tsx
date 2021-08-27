@@ -1,11 +1,11 @@
 interface Props {
-  handleBurgerClick?: () => void;
+  handleIconClick?: () => void;
   dimension?: number;
 }
 
-export const CrossIcon = ({ handleBurgerClick, dimension = 30 }: Props) => {
+export const CrossIcon = ({ handleIconClick, dimension = 30 }: Props) => {
   return (
-    <div onClick={handleBurgerClick}>
+    <div onClick={handleIconClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width={dimension}

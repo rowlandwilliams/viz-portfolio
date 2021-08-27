@@ -40,7 +40,7 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full p-4 mt-20 md:mt-0 bg-white"
+      className="w-full p-4 bg-white"
     >
       <div className="relative">
         <Chevrons />
