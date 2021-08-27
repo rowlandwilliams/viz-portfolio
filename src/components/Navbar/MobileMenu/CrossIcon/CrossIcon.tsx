@@ -1,20 +1,21 @@
 interface Props {
   handleBurgerClick?: () => void;
+  dimension?: number;
 }
 
-export const CrossIcon = ({ handleBurgerClick }: Props) => {
+export const CrossIcon = ({ handleBurgerClick, dimension = 30 }: Props) => {
   return (
     <div onClick={handleBurgerClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
+        width={dimension}
+        height={dimension}
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       >
-        <line x2="30" y2="30" />
-        <line x1="30" y2="30" />
+        <line x2={dimension} y2={dimension} />
+        <line x1={dimension} y2={dimension} />
       </svg>
     </div>
   );

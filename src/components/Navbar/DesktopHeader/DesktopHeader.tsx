@@ -15,7 +15,7 @@ export const DesktopHeader = ({ burgerIsVisible }: Props) => {
                 Rowland Williams
               </div>
             ) : (
-              <div className="text-xl text-gray-800 mr-4 bg-pink-400">
+              <div className="text-xl text-gray-800 mr-4">
                 Data Visualisation Engineer
               </div>
             )}

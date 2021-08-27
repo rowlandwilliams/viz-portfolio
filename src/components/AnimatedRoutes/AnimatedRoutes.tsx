@@ -1,5 +1,5 @@
 import { AnimatePresence } from "framer-motion";
-import { Route, Switch, useLocation } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { Bio } from "./Bio/Bio";
 import { ImgData } from "../../types";
 import { ProjectsGrid } from "./ProjectsGrid/ProjectsGrid";
@@ -10,8 +10,6 @@ interface Props {
 }
 
 export const AnimatedRoutes = ({ allImages }: Props) => {
-  const location = useLocation();
-  console.log(location);
   return (
     <AnimatePresence exitBeforeEnter>
       <Switch>

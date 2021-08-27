@@ -21,6 +21,7 @@ export const ProjectsGrid = ({ allImages }: Props) => {
             (project, i) =>
               i % 2 === 0 && (
                 <Project
+                  key={project.imgName}
                   imgName={project.imgName}
                   projectTitle={project.projectTitle}
                   projectStack={project.projectStack}
@@ -40,6 +41,7 @@ export const ProjectsGrid = ({ allImages }: Props) => {
             (project, i) =>
               i % 2 !== 0 && (
                 <Project
+                  key={project.imgName}
                   imgName={project.imgName}
                   projectTitle={project.projectTitle}
                   projectStack={project.projectStack}
