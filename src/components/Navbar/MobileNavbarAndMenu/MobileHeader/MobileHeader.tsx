@@ -12,12 +12,11 @@ export const MobileHeader = ({
   backgroundColors,
 }: Props) => {
   return (
-    <div className="flex justify-between items-center font-tt-interfaces-demi text-2xl">
+    <div className="flex justify-between items-center h-24 bg-red-400 p-4 font-tt-interfaces-demi text-2xl">
       <div>
         <div>Rowland</div>
         <div>Williams</div>
       </div>
-
       <NavIconSwitch
         menuIsVisible={mobileMenuIsVisible}
         handleIconClick={handleIconClick}

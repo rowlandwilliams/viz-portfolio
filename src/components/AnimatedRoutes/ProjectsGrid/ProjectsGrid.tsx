@@ -23,7 +23,7 @@ export const ProjectsGrid = ({
     >
       <div
         className={classNames(
-          "h-auto flex p-4 pb-0 transition-all ease-in-out duration-150 md:p-4",
+          "h-auto flex p-4 transition-all ease-in-out duration-150 mt-24 md:mt-0",
           {
             "md:ml-28": !desktopMenuIsVisible,
             "md:ml-56": desktopMenuIsVisible,
