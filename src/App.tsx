@@ -45,7 +45,7 @@ const App = () => {
         />
         <div
           className={classNames(
-            "h-screen md:ml-24 pt-4 transition-all ease-in duration-150 overflow-hidden",
+            "md:h-screen md:ml-24 pt-4 transition-all ease-in duration-150 overflow-hidden",
             {
               "w-28 overflow-visible px-4 opacity-100": desktopMenuIsVisible,
               "w-0 px-0 opacity-0": !desktopMenuIsVisible,
