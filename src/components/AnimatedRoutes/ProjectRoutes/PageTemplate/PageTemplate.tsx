@@ -7,6 +7,7 @@ import { ThirdPartyIcons } from "./ThirdPartyIcons/ThirdPartyIcons";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
 import classNames from "classnames";
 import { ProjectOverview } from "./ProjectOverview/ProjectOverview";
+import { ClientLink } from "./ThirdPartyIcons/ClientLink/ClientLink";
 
 interface Props {
   projectName: string;
@@ -27,6 +28,7 @@ export const PageTemplate = ({
 
   const {
     projectTitle,
+    clientUrl,
     projectOverview,
     projectUrl,
     repoUrl,
@@ -52,11 +54,16 @@ export const PageTemplate = ({
       )}
     >
       <div className="relative md:ml-40">
-        {/* <Chevrons /> */}
-        <div className="flex justify-between items-center mb-4 md:mb-12 w-3/4 ">
-          <div className="font-tt-interfaces-demi text-3xl text-gray-800">
+        <div className="flex justify-between items-center mb-4 md:mb-12">
+          <div className="font-tt-interfaces-demi text-3xl text-gray-800 w-3/4">
             {projectTitle}
           </div>
+          {clientUrl && (
+            <ClientLink
+              backgroundColor={backgroundColor}
+              clientUrl={clientUrl}
+            />
+          )}
         </div>
         <div className="flex flex-col">
           <ProjectPageImages
