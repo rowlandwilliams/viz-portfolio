@@ -31,7 +31,7 @@ const App = () => {
   };
 
   return (
-    <div className="relative flex flex-col md:flex-row font-tt-interfaces w-screen">
+    <div className="relative flex flex-col md:flex-row font-tt-interfaces">
       <Router basename={process.env.PUBLIC_URL}>
         <NavBar
           desktopMenuIsVisible={desktopMenuIsVisible}

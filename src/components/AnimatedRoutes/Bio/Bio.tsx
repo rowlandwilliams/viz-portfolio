@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { motion } from "framer-motion";
 import radial from "../../../assets/img/radial.png";
 
@@ -14,14 +15,24 @@ const clients: Client[] = [
   { name: "Matthew Shribman", url: "https://www.matthewshribman.com/" },
 ];
 
-export const Bio = () => {
+interface Props {
+  desktopMenuIsVisible: boolean;
+}
+
+export const Bio = ({ desktopMenuIsVisible }: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full h-screen p-4 mt-24 md:mt-0 text-sm"
+      className={classNames(
+        "w-full h-screen p-4 md:py-8 mt-24 md:mt-0 text-sm transition-all ease-in-out duration-150",
+        {
+          "md:ml-28": !desktopMenuIsVisible,
+          "md:ml-56": desktopMenuIsVisible,
+        }
+      )}
     >
       <div>
         <div className="mb-4">

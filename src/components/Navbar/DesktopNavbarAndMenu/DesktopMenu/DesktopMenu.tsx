@@ -15,7 +15,7 @@ export const DesktopMenu = ({
   return (
     <div
       className={classNames(
-        "md:h-screen pt-4 transition-all ease-in-out duration-150 overflow-hidden",
+        "md:h-screen py-8 transition-all ease-in-out duration-150 overflow-hidden",
         {
           "w-28 overflow-visible px-4 opacity-100": desktopMenuIsVisible,
           "w-0 px-0 opacity-0": !desktopMenuIsVisible,
