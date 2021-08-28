@@ -29,7 +29,10 @@ export const AnimatedRoutes = ({
         <Route path="/about">
           <Bio />
         </Route>
-        <ProjectRoutes allImages={allImages} />
+        <ProjectRoutes
+          allImages={allImages}
+          desktopMenuIsVisible={desktopMenuIsVisible}
+        />
       </Switch>
     </AnimatePresence>
   );

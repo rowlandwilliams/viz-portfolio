@@ -4,11 +4,8 @@ import { NavBar } from "./components/Navbar/NavBar";
 import { HashRouter as Router } from "react-router-dom";
 import { importAllImages } from "./components/AnimatedRoutes/ProjectsGrid/ProjectColumns/Project/utils";
 import { ImgData } from "./types";
-
 import { AnimatedRoutes } from "./components/AnimatedRoutes/AnimatedRoutes";
-import classNames from "classnames";
 import { projectData } from "./components/utils/projectData";
-import { DesktopMenuLinks } from "./components/Navbar/DesktopNavbarAndMenu/DesktopMenu/DesktopMenuLinks/DesktopMenuLinks";
 
 const allImages: ImgData[] = importAllImages(
   require.context("./assets/img/"),

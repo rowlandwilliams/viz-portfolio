@@ -6,13 +6,19 @@ import { StackLabels } from "./StackLabels/StackLabels";
 import { ThirdPartyIcons } from "./ThirdPartyIcons/ThirdPartyIcons";
 import { Chevrons } from "./Chevrons/Chevrons";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
+import classNames from "classnames";
 
 interface Props {
   projectName: string;
   projectImages: ImgData[];
+  desktopMenuIsVisible: boolean;
 }
 
-export const PageTemplate = ({ projectName, projectImages }: Props) => {
+export const PageTemplate = ({
+  projectName,
+  projectImages,
+  desktopMenuIsVisible,
+}: Props) => {
   const [activeImgIndex, setActiveImgIndex] = useState(0);
 
   const project = projectData.filter(
@@ -40,7 +46,13 @@ export const PageTemplate = ({ projectName, projectImages }: Props) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full p-4 bg-white"
+      className={classNames(
+        "w-full p-4 bg-white transition-all ease-in-out duration-150",
+        {
+          "md:ml-28": !desktopMenuIsVisible,
+          "md:ml-56": desktopMenuIsVisible,
+        }
+      )}
     >
       <div className="relative">
         <Chevrons />
