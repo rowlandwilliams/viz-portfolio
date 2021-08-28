@@ -1,5 +1,5 @@
-import { DesktopNavbar } from "./DesktopNavbar/DesktopNavbar";
-import { MobileNavbar } from "./MobileNavbar/MobileNavbar";
+import { DesktopNavbarAndMenu } from "./DesktopNavbarAndMenu/DesktopNavbarAndMenu";
+import { MobileNavbarAndMenu } from "./MobileNavbarAndMenu/MobileNavbarAndMenu";
 
 interface Props {
   desktopMenuIsVisible: boolean;
@@ -18,12 +18,12 @@ export const NavBar = ({
 }: Props) => {
   return (
     <div className="fixed flex justify-between items-center w-screen md:w-24 h-20 md:h-screen z-30">
-      <DesktopNavbar
+      <DesktopNavbarAndMenu
         desktopMenuIsVisible={desktopMenuIsVisible}
         handleIconClick={handleDesktopIconClick}
         backgroundColors={backgroundColors}
       />
-      <MobileNavbar
+      <MobileNavbarAndMenu
         mobileMenuIsVisible={mobileMenuIsVisible}
         handleIconClick={handleMobileIconClick}
         backgroundColors={backgroundColors}

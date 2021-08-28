@@ -1,8 +1,6 @@
-import { DesktopMenuLinks } from "../../DesktopMenu/DesktopMenuLinks/DesktopMenuLinks";
-import { NavIconSwitch } from "../Icons/NavIconSwitch/NavIconSwitch";
-import { SocialIcons } from "../Icons/SocialIcons/SocialIcons";
-import { DesktopHeader } from "./DesktopHeader/DesktopHeader";
+import { DesktopMenuLinks } from "./DesktopMenu/DesktopMenuLinks/DesktopMenuLinks";
 import classNames from "classnames";
+import { DesktopNavbar } from "./DesktopNavbar/DesktopNavbar";
 
 interface Props {
   desktopMenuIsVisible: boolean;
@@ -10,24 +8,18 @@ interface Props {
   backgroundColors: string[];
 }
 
-export const DesktopNavbar = ({
+export const DesktopNavbarAndMenu = ({
   desktopMenuIsVisible,
   handleIconClick,
   backgroundColors,
 }: Props) => {
   return (
     <div className="hidden md:flex h-full">
-      <div className="flex flex-col justify-between items-center md:h-full w-28 pt-8 pb-4">
-        <div className="relative">
-          <NavIconSwitch
-            handleIconClick={handleIconClick}
-            menuIsVisible={desktopMenuIsVisible}
-            backgroundColors={backgroundColors}
-          />
-          <DesktopHeader menuIsVisible={desktopMenuIsVisible} />
-        </div>
-        <SocialIcons />
-      </div>
+      <DesktopNavbar
+        desktopMenuIsVisible={desktopMenuIsVisible}
+        handleIconClick={handleIconClick}
+        backgroundColors={backgroundColors}
+      />
       <div
         className={classNames(
           "md:h-screen pt-4 transition-all ease-in-out duration-150 overflow-hidden",

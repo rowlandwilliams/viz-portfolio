@@ -1,4 +1,4 @@
-import { MobileMenu } from "../MobileMenu/MobileMenu";
+import { MobileMenu } from "./MobileMenu/MobileMenu";
 import { MobileHeader } from "./MobileHeader/MobileHeader";
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
   backgroundColors: string[];
 }
 
-export const MobileNavbar = ({
+export const MobileNavbarAndMenu = ({
   mobileMenuIsVisible,
   handleIconClick,
   backgroundColors,

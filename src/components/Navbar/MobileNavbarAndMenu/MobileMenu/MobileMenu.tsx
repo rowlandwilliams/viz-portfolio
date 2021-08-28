@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import { SocialIcons } from "../Icons/SocialIcons/SocialIcons";
+import { SocialIcons } from "../../Icons/SocialIcons/SocialIcons";
 
 interface Props {
   menuIsVisible: boolean;

@@ -1,6 +1,6 @@
 import { ImgData } from "../../../../../types";
 import { projectData } from "../../../../utils/projectData";
-import { Project } from "../../Project/Project";
+import { Project } from "../Project/Project";
 
 interface Props {
   allImages: ImgData[];
