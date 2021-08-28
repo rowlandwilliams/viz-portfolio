@@ -1,5 +1,3 @@
-import { DesktopMenuLinks } from "./DesktopMenu/DesktopMenuLinks/DesktopMenuLinks";
-import classNames from "classnames";
 import { DesktopNavbar } from "./DesktopNavbar/DesktopNavbar";
 import { DesktopMenu } from "./DesktopMenu/DesktopMenu";
 
@@ -21,9 +19,11 @@ export const DesktopNavbarAndMenu = ({
         handleIconClick={handleIconClick}
         backgroundColors={backgroundColors}
       />
-      <DesktopMenu  desktopMenuIsVisible={desktopMenuIsVisible}
+      <DesktopMenu
+        desktopMenuIsVisible={desktopMenuIsVisible}
         handleIconClick={handleIconClick}
-        backgroundColors={backgroundColors}/>
+        backgroundColors={backgroundColors}
+      />
     </div>
   );
 };
