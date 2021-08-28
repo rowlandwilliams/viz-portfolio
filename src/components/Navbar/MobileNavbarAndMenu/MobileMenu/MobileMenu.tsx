@@ -13,6 +13,7 @@ export const MobileMenu = ({
   closeMenuOnLinkClick,
   backgroundColor,
 }: Props) => {
+  const { innerHeight } = window;
   return (
     <div
       className={classNames(
@@ -21,8 +22,9 @@ export const MobileMenu = ({
           "-left-full": !menuIsVisible,
           "left-0": menuIsVisible,
         },
-        "w-auto h-screen px-4 pt-2  z-20 bg-" + backgroundColor
+        "w-auto min-h-screen px-4 pt-2 z-20 bg-" + backgroundColor
       )}
+      style={{ height: innerHeight - 10 + "px" }}
     >
       <div className="flex flex-col justify-between h-full">
         <div>

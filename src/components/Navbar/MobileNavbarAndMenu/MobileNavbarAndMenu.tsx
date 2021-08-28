@@ -12,8 +12,9 @@ export const MobileNavbarAndMenu = ({
   handleIconClick,
   backgroundColors,
 }: Props) => {
+  const { innerWidth } = window;
   return (
-    <div className="md:hidden w-full">
+    <div className="md:hidden" style={{ width: innerWidth }}>
       <MobileHeader
         mobileMenuIsVisible={mobileMenuIsVisible}
         handleIconClick={handleIconClick}
