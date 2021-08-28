@@ -12,7 +12,10 @@ export const projectData = [
   },
   {
     imgName: "supernova",
-    projectTitle: "Supernova AI Discovery",
+    projectTitle:
+      "Discovery work for Supernova AI - a novel visualisation platform for ESG investment data",
+    projectOverview:
+      "Environmental, Social and Governance (ESG) investing is a form of socially responsible investing that prioritizes financial returns alongside a company’s impact on the environment, its stakeholders, and the planet",
     projectStack: ["React", "TypeScript", "Storybook", "d3.js", "Three.js"],
     backgroundColor: "blue-500",
     projectDescription:

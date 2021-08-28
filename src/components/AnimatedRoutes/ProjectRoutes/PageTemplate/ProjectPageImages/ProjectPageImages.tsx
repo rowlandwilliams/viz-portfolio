@@ -23,7 +23,7 @@ export const ProjectPageImages = ({
   backgroundColor,
 }: Props) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center md:mb-12">
       <MainImage
         projectUrl={projectUrl}
         mainImgSrc={mainImgSrc}

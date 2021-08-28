@@ -4,9 +4,9 @@ import { ImgData } from "../../../../types";
 import { projectData } from "../../../utils/projectData";
 import { StackLabels } from "./StackLabels/StackLabels";
 import { ThirdPartyIcons } from "./ThirdPartyIcons/ThirdPartyIcons";
-import { Chevrons } from "./Chevrons/Chevrons";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
 import classNames from "classnames";
+import { ProjectOverview } from "./ProjectOverview/ProjectOverview";
 
 interface Props {
   projectName: string;
@@ -27,6 +27,7 @@ export const PageTemplate = ({
 
   const {
     projectTitle,
+    projectOverview,
     projectUrl,
     repoUrl,
     backgroundColor,
@@ -55,17 +56,13 @@ export const PageTemplate = ({
       )}
     >
       <div className="relative">
-        <Chevrons />
-        <div className="flex justify-between items-center mb-4 md:mb-8">
+        {/* <Chevrons /> */}
+        <div className="flex justify-between items-center mb-4 md:mb-12 w-3/4 ">
           <div className="font-tt-interfaces-demi text-3xl text-gray-800">
             {projectTitle}
           </div>
-          <StackLabels
-            projectStack={projectStack}
-            backgroundColor={backgroundColor}
-          />
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col md:mx-60">
           <ProjectPageImages
             projectImages={projectImages}
             projectUrl={projectUrl}
@@ -75,25 +72,24 @@ export const PageTemplate = ({
             handleImageClick={handleImageClick}
             backgroundColor={backgroundColor}
           />
-          <div className="px-2 text-center">
-            <div className="mt-8 mb-4">{projectDescription}</div>
-            <div className="text-sm my-4">
-              {projectBullets.map((bullet) => (
-                <div>- {bullet}</div>
-              ))}
-            </div>
+          <ProjectOverview projectOverview={projectOverview} />
+          <div className="mt-8 mb-4">{projectDescription}</div>
+          <div className="text-sm my-4">
+            {projectBullets.map((bullet) => (
+              <div>- {bullet}</div>
+            ))}
           </div>
-          <StackLabels
-            projectStack={projectStack}
-            backgroundColor={backgroundColor}
-            isDesktop
-          />
-          <ThirdPartyIcons
-            backgroundColor={backgroundColor}
-            repoUrl={repoUrl}
-            projectUrl={projectUrl}
-          />
         </div>
+        <StackLabels
+          projectStack={projectStack}
+          backgroundColor={backgroundColor}
+          isDesktop
+        />
+        <ThirdPartyIcons
+          backgroundColor={backgroundColor}
+          repoUrl={repoUrl}
+          projectUrl={projectUrl}
+        />
       </div>
     </motion.div>
   );
