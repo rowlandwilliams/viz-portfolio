@@ -30,6 +30,7 @@ export const PageTemplate = ({
   const {
     projectTitle,
     clientUrl,
+    clientName,
     projectOverview,
     projectUrl,
     repoUrl,
@@ -64,6 +65,7 @@ export const PageTemplate = ({
               backgroundColor={backgroundColor}
               iconUrl={clientUrl}
               svgIcon={<ClientLink />}
+              tooltipText={clientName}
             />
           )}
         </div>

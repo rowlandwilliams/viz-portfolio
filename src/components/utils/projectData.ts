@@ -21,6 +21,7 @@ export const projectData = [
     projectDescription:
       "Discovery work for Supernova AI, a new visualisation platform for Environmental, Social and Governance (ESG) investment data. ",
     clientUrl: "https://supernova.ai",
+    clientName: "Supernova AI",
     projectBullets: [
       "Built a component library using Storybook and React / TypeScript.",
       "Created web scrapers to automate collection of large volumes of ESG data.",
