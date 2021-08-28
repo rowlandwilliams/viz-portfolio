@@ -1,7 +1,7 @@
+import classNames from "classnames";
 import { motion } from "framer-motion";
 import { ImgData } from "../../../types";
-import { projectData } from "../../utils/projectData";
-import { Project } from "./Project/Project";
+import { ProjectColumns } from "./ProjectColumns/ProjectColumns";
 
 interface Props {
   allImages: ImgData[];
@@ -21,49 +21,19 @@ export const ProjectsGrid = ({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="h-auto flex p-4 pb-0 md:p-4">
-        <div className="w-5/12">
-          {projectData.map(
-            (project, i) =>
-              i % 2 === 0 && (
-                <Project
-                  key={project.imgName}
-                  imgName={project.imgName}
-                  projectTitle={project.projectTitle}
-                  projectStack={project.projectStack}
-                  backgroundColor={project.backgroundColor}
-                  projectThumbnail={
-                    allImages.filter((imageObj) => {
-                      const re = new RegExp(project.imgName, "g");
-                      return imageObj.slug.match(re);
-                    })[0].module.default
-                  }
-                  handleDesktopBurgerClick={handleDesktopBurgerClick}
-                />
-              )
-          )}
-        </div>
-        <div className="w-7/12">
-          {projectData.map(
-            (project, i) =>
-              i % 2 !== 0 && (
-                <Project
-                  key={project.imgName}
-                  imgName={project.imgName}
-                  projectTitle={project.projectTitle}
-                  projectStack={project.projectStack}
-                  backgroundColor={project.backgroundColor}
-                  projectThumbnail={
-                    allImages.filter((imageObj) => {
-                      const re = new RegExp(project.imgName, "g");
-                      return imageObj.slug.match(re);
-                    })[0].module.default
-                  }
-                  handleDesktopBurgerClick={handleDesktopBurgerClick}
-                />
-              )
-          )}
-        </div>
+      <div
+        className={classNames(
+          "h-auto flex p-4 pb-0 transition-all ease-in-out duration-150 md:p-4",
+          {
+            "md:ml-28": !desktopMenuIsVisible,
+            "md:ml-56": desktopMenuIsVisible,
+          }
+        )}
+      >
+        <ProjectColumns
+          allImages={allImages}
+          handleDesktopBurgerClick={handleDesktopBurgerClick}
+        />
       </div>
     </motion.div>
   );
