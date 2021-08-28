@@ -48,21 +48,17 @@ export const PageTemplate = ({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className={classNames(
-        "w-full p-4 bg-white transition-all ease-in-out duration-150 mt-24 md:mt-0 md:p-8",
-        {
-          "md:ml-28": !desktopMenuIsVisible,
-          "md:ml-56": desktopMenuIsVisible,
-        }
+        "w-full p-4 bg-white transition-all ease-in-out duration-150 mt-24 md:mt-0 md:p-8 md:ml-14"
       )}
     >
-      <div className="relative">
+      <div className="relative md:ml-40">
         {/* <Chevrons /> */}
         <div className="flex justify-between items-center mb-4 md:mb-12 w-3/4 ">
           <div className="font-tt-interfaces-demi text-3xl text-gray-800">
             {projectTitle}
           </div>
         </div>
-        <div className="flex flex-col md:mx-60">
+        <div className="flex flex-col">
           <ProjectPageImages
             projectImages={projectImages}
             projectUrl={projectUrl}
