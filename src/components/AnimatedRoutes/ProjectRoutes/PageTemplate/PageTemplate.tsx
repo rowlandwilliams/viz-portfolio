@@ -8,6 +8,7 @@ import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
 import classNames from "classnames";
 import { ProjectOverview } from "./ProjectOverview/ProjectOverview";
 import { ClientLink } from "./ThirdPartyIcons/ClientLink/ClientLink";
+import { HoverIcon } from "./ThirdPartyIcons/HoverIcon/HoverIcon";
 
 interface Props {
   projectName: string;
@@ -54,14 +55,15 @@ export const PageTemplate = ({
       )}
     >
       <div className="relative md:ml-40">
-        <div className="flex justify-between items-center mb-4 md:mb-12">
+        <div className="flex justify-between items-start mb-4 md:mb-12">
           <div className="font-tt-interfaces-demi text-3xl text-gray-800 w-3/4">
             {projectTitle}
           </div>
           {clientUrl && (
-            <ClientLink
+            <HoverIcon
               backgroundColor={backgroundColor}
-              clientUrl={clientUrl}
+              iconUrl={clientUrl}
+              svgIcon={<ClientLink />}
             />
           )}
         </div>
