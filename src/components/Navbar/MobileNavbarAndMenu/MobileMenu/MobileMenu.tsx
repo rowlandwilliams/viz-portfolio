@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Link } from "react-router-dom";
-import { SocialIcons } from "../../Icons/SocialIcons/SocialIcons";
+import { NavbarSocialIcons } from "../../NavbarSocialIcons/SocialIcons/NavbarSocialIcons";
 
 interface Props {
   menuIsVisible: boolean;
@@ -24,14 +24,15 @@ export const MobileMenu = ({
         },
         "w-auto min-h-screen px-4 pt-2 z-20 bg-" + backgroundColor
       )}
-      style={{ height: innerHeight - 10 + "px" }}
+      style={{ height: innerHeight + "px" }}
     >
-      <div className="flex flex-col justify-between h-full">
+      <div className="flex flex-col h-full">
         <div>
-          <div className="font-tt-interfaces-demi text-white text-2xl">
+          <div className="font-tt-interfaces-demi text-white text-2xl mb-4">
             <div>Data Visualisation</div>
+            <div>Engineer</div>
           </div>
-          <div className="text-sm pt-2">
+          <div className="text-sm pt-2 mb-4">
             <div className="flex justify-between">
               <div>
                 <Link to="/" onClick={() => closeMenuOnLinkClick(false)}>
@@ -56,8 +57,8 @@ export const MobileMenu = ({
             </a>
           </div>
         </div>
-        <div className="flex md:hidden">
-          <SocialIcons />
+        <div className="flex md:hidden pt-2">
+          <NavbarSocialIcons hoverColor={backgroundColor} isMobile />
         </div>
       </div>
     </div>

@@ -50,7 +50,7 @@ export const PageTemplate = ({
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
       className={classNames(
-        "w-full p-4 bg-white transition-all ease-in-out duration-150 mt-24 md:mt-0 md:p-8 md:ml-14"
+        "w-full p-4 bg-white transition-all ease-in-out duration-150 mt-24 md:mt-0 md:p-8 md:ml-14 md:mr-36 max-w-7xl"
       )}
     >
       <div className="relative md:ml-40">

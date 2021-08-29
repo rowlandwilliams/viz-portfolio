@@ -1,13 +1,15 @@
-import classNames from "classnames";
-import { motion } from "framer-motion";
 import { useState } from "react";
+import { ExpandingCircle } from "./ExpandingCircle/ExpandingCircle";
+import { SvgIcon } from "./SvgIcon/SvgIcon";
+import { Tooltip } from "./Tooltip/Tooltip";
 
 interface Props {
   backgroundColor: string;
   iconUrl: string | undefined;
   svgIcon: React.ReactNode;
-  tooltipComponent: React.ReactNode;
+  tooltipComponent?: React.ReactNode;
   showTooltip?: boolean;
+  isMobile?: boolean;
 }
 
 export const HoverIcon = ({
@@ -16,6 +18,7 @@ export const HoverIcon = ({
   svgIcon,
   tooltipComponent,
   showTooltip = true,
+  isMobile = false,
 }: Props) => {
   const [iconIsHovered, setIconIsHovered] = useState(false);
 
@@ -24,39 +27,27 @@ export const HoverIcon = ({
       <div
         onMouseOver={() => setIconIsHovered(true)}
         onMouseLeave={() => setIconIsHovered(false)}
-        className="mr-2"
+        className={showTooltip ? "ml-2" : ""}
       >
-        <div className="relative flex flex-col items-center">
-          <svg height="36" width="36">
-            <motion.circle
-              className={"fill-current text-opacity-50 text-" + backgroundColor}
-              cx="50%"
-              cy="50%"
-              r="0"
-              fill={backgroundColor}
-              animate={{
-                r: iconIsHovered ? "50%" : 0,
-              }}
-              transition={{ duration: 0.15 }}
-            ></motion.circle>
-          </svg>
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4">
-            {svgIcon}
+        {isMobile ? (
+          <div className="mr-1">
+            <SvgIcon showTooltip={showTooltip} svgIcon={svgIcon} isMobile />
           </div>
-          {showTooltip && (
-            <div
-              className={classNames(
-                `absolute top-full whitespace-nowrap text-${backgroundColor} text-xs underline p-2 transition-opacity duration-300`,
-                {
-                  "opacity-1": iconIsHovered,
-                  "opacity-0": !iconIsHovered,
-                }
-              )}
-            >
-              {tooltipComponent}
-            </div>
-          )}
-        </div>
+        ) : (
+          <div className="relative flex flex-col items-center">
+            <ExpandingCircle
+              backgroundColor={backgroundColor}
+              iconIsHovered={iconIsHovered}
+            />
+            <SvgIcon showTooltip={showTooltip} svgIcon={svgIcon} />
+            <Tooltip
+              showTooltip={showTooltip}
+              backgroundColor={backgroundColor}
+              iconIsHovered={iconIsHovered}
+              tooltipComponent={tooltipComponent}
+            />
+          </div>
+        )}
       </div>
     </a>
   );

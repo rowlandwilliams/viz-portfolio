@@ -1,5 +1,5 @@
-import { NavIconSwitch } from "../../Icons/NavIconSwitch/NavIconSwitch";
-import { SocialIcons } from "../../Icons/SocialIcons/SocialIcons";
+import { NavIconSwitch } from "../../NavbarSocialIcons/NavIconSwitch/NavIconSwitch";
+import { NavbarSocialIcons } from "../../NavbarSocialIcons/SocialIcons/NavbarSocialIcons";
 import { DesktopHeader } from "./DesktopHeader/DesktopHeader";
 
 interface Props {
@@ -23,7 +23,7 @@ export const DesktopNavbar = ({
         />
         <DesktopHeader menuIsVisible={desktopMenuIsVisible} />
       </div>
-      <SocialIcons />
+      <NavbarSocialIcons hoverColor={backgroundColors[0]} />
     </div>
   );
 };

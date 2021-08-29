@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NavIconSwitch } from "../../Icons/NavIconSwitch/NavIconSwitch";
+import { NavIconSwitch } from "../../NavbarSocialIcons/NavIconSwitch/NavIconSwitch";
 
 interface Props {
   mobileMenuIsVisible: boolean;
@@ -13,7 +13,7 @@ export const MobileHeader = ({
   backgroundColors,
 }: Props) => {
   return (
-    <div className="flex justify-between items-center h-24 p-4 font-tt-interfaces-demi text-2xl">
+    <div className="flex justify-between items-center h-24 p-4 font-tt-interfaces-demi text-2xl bg-white">
       <Link to="/">
         <div>Rowland</div>
         <div>Williams</div>

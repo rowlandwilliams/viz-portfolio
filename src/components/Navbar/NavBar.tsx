@@ -17,7 +17,7 @@ export const NavBar = ({
   backgroundColors,
 }: Props) => {
   return (
-    <div className="fixed flex justify-between items-center w-screen md:w-24 h-20 md:h-screen z-30">
+    <div className="fixed flex justify-between items-center w-screen md:w-24 md:h-screen z-30">
       <DesktopNavbarAndMenu
         desktopMenuIsVisible={desktopMenuIsVisible}
         handleIconClick={handleDesktopIconClick}
