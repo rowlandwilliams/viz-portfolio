@@ -6,14 +6,16 @@ interface Props {
   backgroundColor: string;
   iconUrl: string | undefined;
   svgIcon: React.ReactNode;
-  tooltipText: string | undefined;
+  tooltipComponent: React.ReactNode;
+  showTooltip?: boolean;
 }
 
 export const HoverIcon = ({
   backgroundColor,
   iconUrl,
   svgIcon,
-  tooltipText,
+  tooltipComponent,
+  showTooltip = true,
 }: Props) => {
   const [iconIsHovered, setIconIsHovered] = useState(false);
 
@@ -22,6 +24,7 @@ export const HoverIcon = ({
       <div
         onMouseOver={() => setIconIsHovered(true)}
         onMouseLeave={() => setIconIsHovered(false)}
+        className="mr-2"
       >
         <div className="relative flex flex-col items-center">
           <svg height="36" width="36">
@@ -40,18 +43,19 @@ export const HoverIcon = ({
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 translate-y-1/4">
             {svgIcon}
           </div>
-          <div
-            className={classNames(
-              `border border-${backgroundColor} bg-opacity-50 rounded-sm text-${backgroundColor} text-xs p-2 mt-2 transition-opacity duration-300`,
-              {
-                "opacity-1": iconIsHovered,
-                "opacity-0": !iconIsHovered,
-              }
-            )}
-          >
-            <div>Explore</div>
-            {tooltipText}
-          </div>
+          {showTooltip && (
+            <div
+              className={classNames(
+                `absolute top-full whitespace-nowrap text-${backgroundColor} text-xs underline p-2 transition-opacity duration-300`,
+                {
+                  "opacity-1": iconIsHovered,
+                  "opacity-0": !iconIsHovered,
+                }
+              )}
+            >
+              {tooltipComponent}
+            </div>
+          )}
         </div>
       </div>
     </a>

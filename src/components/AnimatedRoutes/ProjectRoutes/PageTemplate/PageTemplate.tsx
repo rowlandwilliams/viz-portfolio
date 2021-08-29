@@ -3,12 +3,10 @@ import { useState } from "react";
 import { ImgData } from "../../../../types";
 import { projectData } from "../../../utils/projectData";
 import { StackLabels } from "./StackLabels/StackLabels";
-import { ThirdPartyIcons } from "./ThirdPartyIcons/ThirdPartyIcons";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
 import classNames from "classnames";
 import { ProjectOverview } from "./ProjectOverview/ProjectOverview";
-import { ClientLink } from "./ThirdPartyIcons/ClientLink/ClientLink";
-import { HoverIcon } from "./ThirdPartyIcons/HoverIcon/HoverIcon";
+import { PageHeader } from "./PageHeader/PageHeader";
 
 interface Props {
   projectName: string;
@@ -56,19 +54,14 @@ export const PageTemplate = ({
       )}
     >
       <div className="relative md:ml-40">
-        <div className="flex justify-between items-start mb-4 md:mb-12">
-          <div className="font-tt-interfaces-demi text-3xl text-gray-800 w-3/4">
-            {projectTitle}
-          </div>
-          {clientUrl && (
-            <HoverIcon
-              backgroundColor={backgroundColor}
-              iconUrl={clientUrl}
-              svgIcon={<ClientLink />}
-              tooltipText={clientName}
-            />
-          )}
-        </div>
+        <PageHeader
+          projectTitle={projectTitle}
+          backgroundColor={backgroundColor}
+          clientUrl={clientUrl}
+          clientName={clientName}
+          repoUrl={repoUrl}
+          projectUrl={projectUrl}
+        />
         <div className="flex flex-col">
           <ProjectPageImages
             projectImages={projectImages}
@@ -91,11 +84,6 @@ export const PageTemplate = ({
           projectStack={projectStack}
           backgroundColor={backgroundColor}
           isDesktop
-        />
-        <ThirdPartyIcons
-          backgroundColor={backgroundColor}
-          repoUrl={repoUrl}
-          projectUrl={projectUrl}
         />
       </div>
     </motion.div>

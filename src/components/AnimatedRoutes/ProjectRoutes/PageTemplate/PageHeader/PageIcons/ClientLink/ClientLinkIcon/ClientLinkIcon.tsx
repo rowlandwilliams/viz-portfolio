@@ -1,4 +1,4 @@
-export const ClientLink = () => {
+export const ClientLinkIcon = () => {
   return (
     <>
       <svg

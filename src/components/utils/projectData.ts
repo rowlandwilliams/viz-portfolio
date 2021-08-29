@@ -37,6 +37,8 @@ export const projectData = [
     repoUrl: "https://github.com/rowlandwilliams/matopiba-vis",
     projectDescription:
       "Visualisations and copy for a blog exploring the rapid expansion of soy exports from the Matopiba region of Brazil. Global Canopy is an Oxford-based think-tank targeting the market forces destroying tropical forests.",
+    clientUrl: "https://globalcanopy.org/",
+    clientName: "Global Canopy",
     projectBullets: [
       "Created SVG based visualisations.",
       "Wrote copy and performed data analyses in R.",
@@ -49,6 +51,8 @@ export const projectData = [
     backgroundColor: "indigo-500",
     projectDescription:
       "Flow is an interactive tool that allows users to visualise flows of sugar in Southern and Eastern Africa.",
+    clientUrl: "https://www.kwolco.com/",
+    clientName: "Kwolco",
     projectBullets: [
       "Built for Kenyan agricultural research company Kwolco Ltd.",
       "Design and full-stack development.",
