@@ -5,10 +5,10 @@ import { projectData } from "../../../utils/projectData";
 import { StackLabels } from "./StackLabels/StackLabels";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
 import classNames from "classnames";
-import { ProjectOverview } from "./ProjectOverview/ProjectOverview";
 import { PageTitle } from "./PageHeader/PageTitle/PageTitle";
 import { PageIcons } from "./PageHeader/PageIcons/PageIcons";
 import { setImgHeightOnWindowSize } from "./utils/utils";
+import { PageTextTemplate } from "./PageTextTemplate/PageTextTemplate";
 
 interface Props {
   projectName: string;
@@ -54,10 +54,11 @@ export const PageTemplate = ({
     clientUrl,
     clientName,
     projectOverview,
+    projectProblem,
+    projectSolution,
     projectUrl,
     repoUrl,
     backgroundColor,
-    projectStack,
     projectDescription,
     projectBullets,
     imgName,
@@ -104,17 +105,17 @@ export const PageTemplate = ({
             imgHeight={imgHeight}
           />
         </div>
-        <ProjectOverview projectOverview={projectOverview} />
-        <div className="mt-8 mb-4">{projectDescription}</div>
-        <div className="text-sm my-4">
-          {projectBullets.map((bullet) => (
-            <div>- {bullet}</div>
-          ))}
-        </div>
-        <StackLabels
-          projectStack={projectStack}
-          backgroundColor={backgroundColor}
-          isDesktop
+        <PageTextTemplate
+          headerText="Overview"
+          sectionParagraphs={projectOverview}
+        />
+        <PageTextTemplate
+          headerText="The Problem"
+          sectionParagraphs={projectProblem}
+        />
+        <PageTextTemplate
+          headerText="The Solution"
+          sectionParagraphs={projectSolution}
         />
       </div>
     </motion.div>
