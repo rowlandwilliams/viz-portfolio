@@ -10,6 +10,7 @@ interface Props {
   activeImgIndex: number;
   handleImageClick: (i: number) => void;
   backgroundColor: string;
+  headerHeight: number;
 }
 
 export const ProjectPageImages = ({
@@ -19,15 +20,17 @@ export const ProjectPageImages = ({
   imgName,
   activeImgIndex,
   handleImageClick,
-
   backgroundColor,
+  headerHeight,
 }: Props) => {
+  const imgHeight = window.innerHeight - headerHeight - 40 - 15 - 12;
   return (
-    <div className="flex flex-col items-center md:items-baseline md:mb-12">
+    <div className="flex flex-col justify-end md:items-baseline md:mb-2">
       <MainImage
         projectUrl={projectUrl}
         mainImgSrc={mainImgSrc}
         imgName={imgName}
+        imgHeight={imgHeight}
       />
       {projectImages.length > 1 && (
         <ImageSlider

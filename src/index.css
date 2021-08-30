@@ -19,6 +19,11 @@
   }
 
   @font-face {
+    font-family: "TTInterfaces-Italic";
+    src: url(./fonts/TTInterfaces-Italic.ttf);
+  }
+
+  @font-face {
     font-family: "TTInterfaces-Demi";
     src: url(./fonts/TTInterfaces-DemiBold.ttf);
   }

@@ -3,6 +3,7 @@ import { PageTitle } from "./PageTitle/PageTitle";
 
 interface Props {
   projectTitle: string;
+  projectSubTitle: string | undefined;
   backgroundColor: string;
   clientUrl: string | undefined;
   clientName: string | undefined;
@@ -12,6 +13,7 @@ interface Props {
 
 export const PageHeader = ({
   projectTitle,
+  projectSubTitle,
   backgroundColor,
   clientUrl,
   clientName,
@@ -19,15 +21,18 @@ export const PageHeader = ({
   projectUrl,
 }: Props) => {
   return (
-    <div className="flex justify-between items-start mb-4 md:mb-12 font-tt-interfaces-demi">
-      <PageTitle projectTitle={projectTitle} />
-      <PageIcons
-        backgroundColor={backgroundColor}
-        clientUrl={clientUrl}
-        clientName={clientName}
-        repoUrl={repoUrl}
-        projectUrl={projectUrl}
-      />
+    <div className="mb-4 md:mb-0 md:py-10">
+      <div className="flex justify-between items-start font-tt-interfaces-demi">
+        <PageTitle projectTitle={projectTitle} />
+        <PageIcons
+          backgroundColor={backgroundColor}
+          clientUrl={clientUrl}
+          clientName={clientName}
+          repoUrl={repoUrl}
+          projectUrl={projectUrl}
+        />
+      </div>
+      <div className=" opacity-75 pt-4 ">{projectSubTitle}</div>
     </div>
   );
 };

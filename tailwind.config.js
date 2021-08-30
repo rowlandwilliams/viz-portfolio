@@ -34,12 +34,14 @@ module.exports = {
         "libre-franklin": ["LibreFranklin"],
         inter: ["Inter"],
         "tt-interfaces-regular": ["TTInterfaces-Regular"],
+        "tt-interfaces-italic": ["TTInterfaces-Italic"],
         "tt-interfaces-demi": ["TTInterfaces-Demi"],
         "tt-interfaces-bold": ["TTInterfaces-Bold"],
       },
       spacing: {
         128: "32rem",
         144: "36rem",
+        160: "40rem",
       },
       transitionProperty: {
         width: "width",

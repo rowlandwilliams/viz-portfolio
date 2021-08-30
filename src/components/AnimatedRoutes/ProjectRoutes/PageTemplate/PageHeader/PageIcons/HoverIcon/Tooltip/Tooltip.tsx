@@ -18,7 +18,7 @@ export const Tooltip = ({
       {showTooltip && (
         <div
           className={classNames(
-            `absolute top-full whitespace-nowrap text-${backgroundColor} text-xs underline p-2 transition-opacity duration-300`,
+            `absolute top-full whitespace-nowrap text-${backgroundColor} text-xs underline p-2 mt-1 transition-opacity duration-300`,
             {
               "opacity-1": iconIsHovered,
               "opacity-0": !iconIsHovered,

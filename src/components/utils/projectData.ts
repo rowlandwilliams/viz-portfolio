@@ -2,6 +2,8 @@ export const projectData = [
   {
     imgName: "stock-chart",
     projectTitle: "Stock chart component",
+    projectSubTitle:
+      "Custom stock chart component written in React / Typescript and d3.js.",
     projectStack: ["React", "TypeScript", "d3.js", "Redux"],
     backgroundColor: "pink-500",
     projectUrl: "https://rowlandwilliams.github.io/stock-chart/",
@@ -12,8 +14,9 @@ export const projectData = [
   },
   {
     imgName: "supernova",
-    projectTitle:
-      "Discovery work for Supernova AI - a novel visualisation platform for ESG investment data",
+    projectTitle: "Supernova AI",
+    projectSubTitle:
+      "Discovery work for a novel visualisation platform for ESG investment data",
     projectOverview:
       "Environmental, Social and Governance (ESG) investing is a form of socially responsible investing that prioritizes financial returns alongside a company’s impact on the environment, its stakeholders, and the planet",
     projectStack: ["React", "TypeScript", "Storybook", "d3.js", "Three.js"],
@@ -46,7 +49,9 @@ export const projectData = [
   },
   {
     imgName: "flow",
-    projectTitle: "FLOW: a supply chain mapping tool for African sugar",
+    projectTitle: "Flow - Agri-data & Insight",
+    projectSubTitle:
+      "A custom geo-visualisation solution for Kwolco, a Kenyan Agri-research company with deep knowledge of the African sugar market.",
     projectStack: ["React", "NodeJS", "deck.gl", "PostgreSQL"],
     backgroundColor: "indigo-500",
     projectDescription:

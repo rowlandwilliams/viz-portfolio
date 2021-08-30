@@ -18,15 +18,17 @@ export const ImageSlider = ({
 }: Props) => {
   const nImages = projectImages.length;
   return (
-    <svg width={circleGroupWidth * nImages + "px"} height={sliderHeight}>
-      {projectImages.map((image, i) => (
-        <CircleGroup
-          i={i}
-          handleImageClick={handleImageClick}
-          activeImgIndex={activeImgIndex}
-          backgroundColor={backgroundColor}
-        />
-      ))}
-    </svg>
+    <div className="mt-3">
+      <svg width={circleGroupWidth * nImages + "px"} height={sliderHeight}>
+        {projectImages.map((image, i) => (
+          <CircleGroup
+            i={i}
+            handleImageClick={handleImageClick}
+            activeImgIndex={activeImgIndex}
+            backgroundColor={backgroundColor}
+          />
+        ))}
+      </svg>
+    </div>
   );
 };
