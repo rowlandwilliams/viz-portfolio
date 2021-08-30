@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b09f512a.chunk.css",
-    "main.js": "/static/js/main.3d033362.chunk.js",
-    "main.js.map": "/static/js/main.3d033362.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c9a95384.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c9a95384.js.map",
-    "static/js/2.5eda9705.chunk.js": "/static/js/2.5eda9705.chunk.js",
-    "static/js/2.5eda9705.chunk.js.map": "/static/js/2.5eda9705.chunk.js.map",
-    "static/js/3.86718a06.chunk.js": "/static/js/3.86718a06.chunk.js",
-    "static/js/3.86718a06.chunk.js.map": "/static/js/3.86718a06.chunk.js.map",
+    "main.css": "/static/css/main.d3f65bd3.chunk.css",
+    "main.js": "/static/js/main.ebf39f16.chunk.js",
+    "main.js.map": "/static/js/main.ebf39f16.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9a1c1188.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9a1c1188.js.map",
+    "static/js/2.5971ebc7.chunk.js": "/static/js/2.5971ebc7.chunk.js",
+    "static/js/2.5971ebc7.chunk.js.map": "/static/js/2.5971ebc7.chunk.js.map",
+    "static/js/3.f6ea9982.chunk.js": "/static/js/3.f6ea9982.chunk.js",
+    "static/js/3.f6ea9982.chunk.js.map": "/static/js/3.f6ea9982.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b09f512a.chunk.css.map": "/static/css/main.b09f512a.chunk.css.map",
-    "static/js/2.5eda9705.chunk.js.LICENSE.txt": "/static/js/2.5eda9705.chunk.js.LICENSE.txt",
+    "static/css/main.d3f65bd3.chunk.css.map": "/static/css/main.d3f65bd3.chunk.css.map",
+    "static/js/2.5971ebc7.chunk.js.LICENSE.txt": "/static/js/2.5971ebc7.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/TTInterfaces-Regular.07f34fa9.ttf",
     "static/media/co2widget0.jpg": "/static/media/co2widget0.214bf5d2.jpg",
     "static/media/cycle-map0.jpg": "/static/media/cycle-map0.9d193776.jpg",
@@ -22,10 +22,9 @@
     "static/media/flow1.jpg": "/static/media/flow1.07dbe63d.jpg",
     "static/media/flow2.jpg": "/static/media/flow2.71a5718c.jpg",
     "static/media/flow3.jpg": "/static/media/flow3.b2c021cd.jpg",
-    "static/media/matopiba0.jpg": "/static/media/matopiba0.98c2a65d.jpg",
+    "static/media/matopiba0.jpg": "/static/media/matopiba0.9d3c69da.jpg",
     "static/media/matopiba1.jpg": "/static/media/matopiba1.4b40560a.jpg",
     "static/media/matopiba2.jpg": "/static/media/matopiba2.ef301837.jpg",
-    "static/media/matopiba3.jpg": "/static/media/matopiba3.e3c0a566.jpg",
     "static/media/radial.png": "/static/media/radial.43576173.png",
     "static/media/stock-chart0.jpg": "/static/media/stock-chart0.8c906a1e.jpg",
     "static/media/stock-chart1.jpg": "/static/media/stock-chart1.7bf42337.jpg",
@@ -35,9 +34,9 @@
     "static/media/voronoi0.jpg": "/static/media/voronoi0.1097af7f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c9a95384.js",
-    "static/js/2.5eda9705.chunk.js",
-    "static/css/main.b09f512a.chunk.css",
-    "static/js/main.3d033362.chunk.js"
+    "static/js/runtime-main.9a1c1188.js",
+    "static/js/2.5971ebc7.chunk.js",
+    "static/css/main.d3f65bd3.chunk.css",
+    "static/js/main.ebf39f16.chunk.js"
   ]
 }
