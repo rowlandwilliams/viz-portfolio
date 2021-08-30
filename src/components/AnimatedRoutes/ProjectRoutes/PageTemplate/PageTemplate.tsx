@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { ImgData } from "../../../../types";
 import { projectData } from "../../../utils/projectData";
-import { StackLabels } from "./StackLabels/StackLabels";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
 import classNames from "classnames";
 import { PageTitle } from "./PageHeader/PageTitle/PageTitle";
@@ -25,6 +24,9 @@ export const PageTemplate = ({
   const headerRef = useRef<HTMLDivElement>(null);
 
   const [imgHeight, setImgHeight] = useState(0);
+
+  // scroll top on load
+  window.scrollTo(0, 0);
 
   // dynamically set img size depending on screen size
   useEffect(() => {
@@ -59,8 +61,6 @@ export const PageTemplate = ({
     projectUrl,
     repoUrl,
     backgroundColor,
-    projectDescription,
-    projectBullets,
     imgName,
   } = project;
 
