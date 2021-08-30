@@ -10,7 +10,7 @@ interface Props {
   activeImgIndex: number;
   handleImageClick: (i: number) => void;
   backgroundColor: string;
-  headerHeight: number;
+  imgHeight: number;
 }
 
 export const ProjectPageImages = ({
@@ -21,9 +21,9 @@ export const ProjectPageImages = ({
   activeImgIndex,
   handleImageClick,
   backgroundColor,
-  headerHeight,
+  imgHeight,
 }: Props) => {
-  const imgHeight = window.innerHeight - headerHeight - 40 - 15 - 12;
+
   return (
     <div className="flex flex-col justify-end md:items-baseline md:mb-2">
       <MainImage

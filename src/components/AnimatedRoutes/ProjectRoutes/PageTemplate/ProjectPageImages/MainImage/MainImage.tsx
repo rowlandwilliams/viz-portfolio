@@ -19,7 +19,7 @@ export const MainImage = ({ projectUrl, mainImgSrc, imgHeight }: Props) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.25 }}
           className="rounded-md object-scale-down"
-          style={{ height: window.innerWidth > 768 ? imgHeight : 400 }}
+          style={{ height: imgHeight }}
         />
       </AnimatePresence>
     </a>

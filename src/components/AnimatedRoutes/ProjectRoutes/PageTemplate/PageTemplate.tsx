@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ImgData } from "../../../../types";
 import { projectData } from "../../../utils/projectData";
 import { StackLabels } from "./StackLabels/StackLabels";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
 import classNames from "classnames";
 import { ProjectOverview } from "./ProjectOverview/ProjectOverview";
-import { PageHeader } from "./PageHeader/PageHeader";
 import { PageTitle } from "./PageHeader/PageTitle/PageTitle";
 import { PageIcons } from "./PageHeader/PageIcons/PageIcons";
+import { setImgHeightOnWindowSize } from "./utils/utils";
 
 interface Props {
   projectName: string;
@@ -24,15 +24,25 @@ export const PageTemplate = ({
   const [activeImgIndex, setActiveImgIndex] = useState(0);
   const headerRef = useRef<HTMLDivElement>(null);
 
-  const [headerHeight, setHeaderHeight] = useState(0);
+  const [imgHeight, setImgHeight] = useState(0);
 
+  // dynamically set img size depending on screen size
   useEffect(() => {
-    if (headerRef.current) {
-      setHeaderHeight(headerRef.current.clientHeight);
-    }
-  }, [headerRef]);
+    const { current } = headerRef;
+    if (current) {
+      setImgHeightOnWindowSize(current, setImgHeight);
 
-  console.log(headerHeight);
+      // add resize listener
+      window.addEventListener("resize", () => {
+        setImgHeightOnWindowSize(current, setImgHeight);
+      });
+      return () => {
+        window.removeEventListener("resize", () => {
+          setImgHeightOnWindowSize(current, setImgHeight);
+        });
+      };
+    }
+  }, []);
 
   const project = projectData.filter(
     (project) => project.imgName === projectName
@@ -91,7 +101,7 @@ export const PageTemplate = ({
             activeImgIndex={activeImgIndex}
             handleImageClick={handleImageClick}
             backgroundColor={backgroundColor}
-            headerHeight={headerHeight}
+            imgHeight={imgHeight}
           />
         </div>
         <ProjectOverview projectOverview={projectOverview} />
