@@ -37,6 +37,7 @@ export const projectData = [
       "Built a component library using Storybook and React / TypeScript.",
       "Created web scrapers to automate collection of large volumes of ESG data.",
     ],
+    projectTechnologies: ["React", "TypeScript", 'd3.js', 'Storybook', 'Puppeteer'],
   },
   {
     imgName: "matopiba",

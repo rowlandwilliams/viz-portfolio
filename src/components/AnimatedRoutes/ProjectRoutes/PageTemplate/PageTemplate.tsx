@@ -8,6 +8,7 @@ import { PageTitle } from "./PageHeader/PageTitle/PageTitle";
 import { PageIcons } from "./PageHeader/PageIcons/PageIcons";
 import { setImgHeightOnWindowSize } from "./utils/utils";
 import { PageTextTemplate } from "./PageTextTemplate/PageTextTemplate";
+import { ProjectDetails } from "./ProjectDetails/ProjectDetails";
 
 interface Props {
   projectName: string;
@@ -26,7 +27,7 @@ export const PageTemplate = ({
   const [imgHeight, setImgHeight] = useState(0);
 
   // scroll top on load
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
 
   // dynamically set img size depending on screen size
   useEffect(() => {
@@ -62,6 +63,7 @@ export const PageTemplate = ({
     repoUrl,
     backgroundColor,
     imgName,
+    projectTechnologies,
   } = project;
 
   const handleImageClick = (i: number) => {
@@ -116,6 +118,10 @@ export const PageTemplate = ({
         <PageTextTemplate
           headerText="The Solution"
           sectionParagraphs={projectSolution}
+        />
+        <ProjectDetails
+          clientUrl={clientUrl}
+          projectTechnologies={projectTechnologies}
         />
       </div>
     </motion.div>
