@@ -2,6 +2,7 @@ import { PageIcons } from "./PageIcons/PageIcons";
 import { PageTitle } from "./PageTitle/PageTitle";
 
 interface Props {
+  headerRef: React.RefObject<HTMLDivElement>;
   projectTitle: string;
   projectSubTitle: string | undefined;
   backgroundColor: string;
@@ -12,6 +13,7 @@ interface Props {
 }
 
 export const PageHeader = ({
+  headerRef,
   projectTitle,
   projectSubTitle,
   backgroundColor,
@@ -21,7 +23,7 @@ export const PageHeader = ({
   projectUrl,
 }: Props) => {
   return (
-    <div className="mb-4 md:mb-0 md:py-10">
+    <div className="mb-4 md:mb-0 md:py-10" ref={headerRef}>
       <div className="flex justify-between items-start font-tt-interfaces-demi">
         <PageTitle projectTitle={projectTitle} />
         <PageIcons
@@ -32,7 +34,7 @@ export const PageHeader = ({
           projectUrl={projectUrl}
         />
       </div>
-      <div className=" opacity-75 pt-4 ">{projectSubTitle}</div>
+      <div className=" opacity-75 pt-8 ">{projectSubTitle}</div>
     </div>
   );
 };

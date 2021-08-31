@@ -4,11 +4,10 @@ import { ImgData } from "../../../../types";
 import { projectData } from "../../../utils/projectData";
 import { ProjectPageImages } from "./ProjectPageImages/ProjectPageImages";
 import classNames from "classnames";
-import { PageTitle } from "./PageHeader/PageTitle/PageTitle";
-import { PageIcons } from "./PageHeader/PageIcons/PageIcons";
 import { setImgHeightOnWindowSize } from "./utils/utils";
 import { PageTextTemplate } from "./PageTextTemplate/PageTextTemplate";
 import { ProjectDetails } from "./ProjectDetails/ProjectDetails";
+import { PageHeader } from "./PageHeader/PageHeader";
 
 interface Props {
   projectName: string;
@@ -55,6 +54,7 @@ export const PageTemplate = ({
     projectTitle,
     projectSubTitle,
     clientUrl,
+    relevantLinks,
     clientName,
     projectOverview,
     projectProblem,
@@ -63,6 +63,7 @@ export const PageTemplate = ({
     repoUrl,
     backgroundColor,
     imgName,
+    projectLinks,
     projectTechnologies,
   } = project;
 
@@ -82,19 +83,16 @@ export const PageTemplate = ({
     >
       <div className="relative md:ml-40">
         <div className="flex flex-col justify-between md:pb-4">
-          <div className="mb-4 md:mb-0  md:pt-10 md:pb-14" ref={headerRef}>
-            <div className="flex justify-between items-start font-tt-interfaces-demi">
-              <PageTitle projectTitle={projectTitle} />
-              <PageIcons
-                backgroundColor={backgroundColor}
-                clientUrl={clientUrl}
-                clientName={clientName}
-                repoUrl={repoUrl}
-                projectUrl={projectUrl}
-              />
-            </div>
-            <div className="f opacity-75 pt-4 ">{projectSubTitle}</div>
-          </div>
+          <PageHeader
+            headerRef={headerRef}
+            projectTitle={projectTitle}
+            projectSubTitle={projectSubTitle}
+            backgroundColor={backgroundColor}
+            clientUrl={clientUrl}
+            clientName={clientName}
+            repoUrl={repoUrl}
+            projectUrl={projectUrl}
+          />
 
           <ProjectPageImages
             projectImages={projectImages}
@@ -120,7 +118,9 @@ export const PageTemplate = ({
           sectionParagraphs={projectSolution}
         />
         <ProjectDetails
+          projectLinks={projectLinks}
           clientUrl={clientUrl}
+          relevantLinks={relevantLinks}
           projectTechnologies={projectTechnologies}
         />
       </div>

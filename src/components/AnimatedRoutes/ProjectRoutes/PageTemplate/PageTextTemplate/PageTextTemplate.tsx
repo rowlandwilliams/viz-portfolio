@@ -1,6 +1,4 @@
-import classNames from "classnames";
-import { useRef } from "react";
-import { useIntersectionObserver } from "./utils";
+import { FadeInOnScrollComponent } from "../FadeInOnScrollComponent/FadeInOnScrollComponent";
 
 interface Props {
   headerText: string;
@@ -8,23 +6,10 @@ interface Props {
 }
 
 export const PageTextTemplate = ({ headerText, sectionParagraphs }: Props) => {
-  const textRef = useRef(null);
-
-  // check for 1/4 visibility
-  const isQuarterVisible = useIntersectionObserver(textRef, {
-    threshold: 0.25,
-  })?.isIntersecting;
-
   return (
-    <>
+    <FadeInOnScrollComponent>
       {sectionParagraphs ? (
-        <div
-          className={classNames("text-lg py-16 transition-all duration-1000", {
-            "opacity-0 ": !isQuarterVisible,
-            "opacity-1 transform -translate-y-3.5 ": isQuarterVisible,
-          })}
-          ref={textRef}
-        >
+        <div className={"text-lg py-16"}>
           <div>
             <div className="text-xl font-tt-interfaces-demi mb-6">
               {headerText}
@@ -35,6 +20,6 @@ export const PageTextTemplate = ({ headerText, sectionParagraphs }: Props) => {
           </div>
         </div>
       ) : null}
-    </>
+    </FadeInOnScrollComponent>
   );
 };

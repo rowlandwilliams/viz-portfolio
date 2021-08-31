@@ -1,31 +1,38 @@
+import { LinkObject } from "../../../../../types";
+import { FadeInOnScrollComponent } from "../FadeInOnScrollComponent/FadeInOnScrollComponent";
+import { ProjectLinks } from "./ProjectLinks/ProjectLinks";
+import { ProjectTechnologies } from "./ProjectTechnologies/ProjectTechnologies";
+
 interface Props {
+  projectLinks: LinkObject[] | undefined;
   clientUrl: string | undefined;
+  relevantLinks: string[] | undefined;
+
   projectTechnologies: string[] | undefined;
 }
 
-export const ProjectDetails = ({ clientUrl, projectTechnologies }: Props) => {
+export const ProjectDetails = ({
+  projectLinks,
+  clientUrl,
+  projectTechnologies,
+  relevantLinks,
+}: Props) => {
   return (
-    <div className="py-8 border-t border-black w-3/4">
-      <div className="mb-4">
-        <div className="text-lg font-tt-interfaces-demi">Links</div>
-        {clientUrl && (
-          <div className="underline">{clientUrl.replace("https://", "")}</div>
-        )}
-      </div>
-      <div className="mb-4">
-        <div className="text-lg font-tt-interfaces-demi mb-2">
-          Project Technologies
-        </div>
-        {projectTechnologies && (
-          <div className="flex">
-            {projectTechnologies.map((tag) => (
-              <div className="mr-2 px-2 border border-black rounded-xl text-sm">
-                {tag}
-              </div>
-            ))}
+    <>
+      {(clientUrl || projectTechnologies) && (
+        <FadeInOnScrollComponent>
+          <div className="py-16 border-t border-black w-3/4">
+            <ProjectLinks
+              projectLinks={projectLinks}
+              relevantLinks={relevantLinks}
+            />
+            <ProjectTechnologies
+              projectTechnologies={projectTechnologies}
+              clientUrl={clientUrl}
+            />
           </div>
-        )}
-      </div>
-    </div>
+        </FadeInOnScrollComponent>
+      )}
+    </>
   );
 };

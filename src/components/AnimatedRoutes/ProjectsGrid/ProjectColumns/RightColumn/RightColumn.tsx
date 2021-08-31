@@ -16,7 +16,6 @@ export const RightColumn = ({ allImages, handleDesktopBurgerClick }: Props) => {
               key={project.imgName}
               imgName={project.imgName}
               projectTitle={project.projectTitle}
-              projectStack={project.projectStack}
               backgroundColor={project.backgroundColor}
               projectThumbnail={
                 allImages.filter((imageObj) => {

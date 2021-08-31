@@ -4,7 +4,6 @@ import { ProjectHoverText } from "./ProjectHoverText/ProjectHoverText";
 interface Props {
   imgName: string;
   projectTitle: string;
-  projectStack: string[];
   backgroundColor: string;
   projectThumbnail: string;
   handleDesktopBurgerClick: (menuIsVisible: boolean) => void;
@@ -13,7 +12,6 @@ interface Props {
 export const Project = ({
   imgName,
   projectTitle,
-  projectStack,
   backgroundColor,
   projectThumbnail,
   handleDesktopBurgerClick,
@@ -28,7 +26,6 @@ export const Project = ({
           <img src={projectThumbnail} alt={imgName} />
           <ProjectHoverText
             projectTitle={projectTitle}
-            projectStack={projectStack}
             backgroundColor={backgroundColor}
           />
         </div>
