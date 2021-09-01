@@ -21,7 +21,9 @@ export const ProjectLinks = ({ projectLinks, relevantLinks }: Props) => {
                   className="underline"
                   key={linkObj.underlinedText}
                 >
-                  {linkObj.underlinedText}
+                  {linkObj.underlinedText
+                    ? linkObj.underlinedText
+                    : linkObj.link.replace("https://", "")}
                 </a>
               ))}
             </div>

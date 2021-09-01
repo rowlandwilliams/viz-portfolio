@@ -82,7 +82,6 @@ export const projectData = [
       "In each case, raw data from Trase was transformed into impactful visualisations using the R package ggplot2. SVG visualisations were then edited using Adobe InDesign to comply with the visual narrative of Trase.",
     ],
     projectLinks: [
-      { link: "https://globalcanopy.org" },
       {
         underlinedText: "Info-brief: Who is buying soy from MATOPIBA?",
         link: "http://resources.trase.earth/documents/infobriefs/Infobrief2.pdf",
@@ -131,17 +130,52 @@ export const projectData = [
   {
     imgName: "cycle-map",
     projectTitle: "cycle-map",
+    projectSubTitle:
+      "A visualisation of >500 Santander bike trips across Central London.",
+    projectOverview: [
+      "Geovisualisation is an effective solution to understand processes occurring across time and space. Using publicly available data from Transport for London, this is a visualisation of >500 bike trips across Central London.",
+      "Data on trip start and end date were converted into geo-referenced routes using the Google Maps API. The deck.gl trips layer was then used to create interactive paths of each route.",
+    ],
+    projectLinks: [
+      { underlinedText: "cycle-map", link: "https://cycle-map.herokuapp.com/" },
+    ],
+    relevantLinks: ["https://deck.gl"],
     projectTechnologies: ["React", "Redux", "deck.gl", "Google Maps"],
     backgroundColor: "purple-300",
     projectUrl: "https://cycle-map.herokuapp.com/",
     repoUrl: "https://github.com/rowlandwilliams/cycle-map",
-    projectDescription:
-      "A visualisation of >500 Santander bike trips across Central London.",
     projectBullets: [],
   },
   {
     imgName: "co2widget",
     projectTitle: "Reporting Carbon Dioxide levels",
+    projectSubTitle:
+      "A free-to-use, embeddable widget displaying daily atmospheric Carbon Dioxide levels",
+    projectOverview: [
+      "The global level of carbon dioxide and its rate of increase are two of the most important factors in deciding the future of our civilisation and life on Earth. ",
+      "One might argue that these numbers aren’t of relevance to some people, but then one could argue the same of the FTSE, S&P, Nikkei etc., and certainly the global CO2 level is of much greater consequence. This kind of numerical information does not necessarily motivate change when communicated in isolation, however it can form an extremely powerful element of a larger, blended communication strategy.",
+    ],
+    projectProblem: [
+      "News organisations around the world, from Bloomberg to the Guardian, have begun to regularly publish information about the level of carbon dioxide in the atmosphere, however, for many, the level of carbon dioxide remains an abstract, inaccessible concept.",
+      "Presenting carbon dioxide levels needs to be done in a way that is easily understandable, communicates an unambiguous message and provides good context.",
+    ],
+    projectSolution: [
+      "This widget was conceived by science communicator Matthew Shribman. As part of a team of developers I helped bring the idea to life.",
+      "This widget updates daily and is collecting data from the Mauna Loa Observatory. The measurements are coordinated by the Scripps Institution of Oceanography. ",
+      "The 1000 years graph shows the historical context of CO2 levels. It updates every day. The 20 years graph shows the level of CO2 over the past 20 years, to provide an indication as to whether the rate of increase is slowing down. It updates once annually and does not show a value for the current year.",
+      "This widget is embeddable, compact, colourful, easy to understand and free, so that news and weather publishers have every reason to use it, and no reason not to.",
+      "The widget is endorsed by the Grantham Institute, the 2 Degrees Institute, Scripps and Reading University’s Department of Meteorology and the World Congress of Science & Factual Producers.",
+    ],
+    projectLinks: [
+      {
+        link: "https://co2widget.com",
+      },
+    ],
+    relevantLinks: [
+      "https://matthewshribman.com/",
+      "https://granthaminstitute.com/",
+      "https://2degreesinstitute.org/",
+    ],
     projectTechnologies: ["Frontend development", "PHP"],
     backgroundColor: "blue-300",
     projectUrl: "https://co2widget.com/",
@@ -155,6 +189,17 @@ export const projectData = [
   {
     imgName: "farmingthefuture",
     projectTitle: "Farming the Future Network",
+    projectOverview: [
+      "Farming the Future serves a diverse collective of land-workers, educators, researchers, lobbyists, activists, organisations and funders, who are dedicated to transforming the current industrial food system.",
+      "Emerging from the agroecological food movement, this alliance seeks to facilitate the power of the collective to build a system of regenerative food production and land use that furthers social and environmental justice.",
+    ],
+    projectProblem: [
+      "Within the Farming the Future network are a multitude of geographically dispersed organizations working on food-security related issues. Each year, funds for novel projects are awarded to organisations collaborating within the network to fund their work.",
+      "Organizations were finding it difficult to identify similar partners within Farming the Future with whom they could collaborate with on funding proposals.",
+    ],
+    projectSolution: [
+      "Using d3.js, I developed an interactive network graph which allowed a user to link together organizations based on shared characteristics such as size, location and mission-type. Whilst providing much needed clarity to Farming the Future members, this visualisation also served as an effective visual aid during an important meeting Farming the Future had with the UK bidy for lottery funding.",
+    ],
     projectTechnologies: ["d3.js"],
     backgroundColor: "red-200",
     projectDescription:
@@ -162,11 +207,18 @@ export const projectData = [
     projectBullets: [
       "Farming the Future are a body of organizations involved in food security.",
     ],
-    relevantLinks: ["https://www.farmingthefuture.uk/"],
+    projectLinks: [
+      {
+        underlinedText: "Network graph",
+        link: "https://rowlandwilliams.github.io/farmingthefuture/",
+      },
+    ],
+    relevantLinks: ["https://farmingthefuture.uk/"],
   },
   {
     imgName: "voronoi",
     projectTitle: "Voronoi fractal generator",
+    projectOverview: ["Click the link to generate beatiful voronoi fractals!"],
     projectTechnologies: ["React", "d3.js"],
     backgroundColor: "yellow-300",
     projectUrl: "https://rowlandwilliams.github.io/voronoi/",

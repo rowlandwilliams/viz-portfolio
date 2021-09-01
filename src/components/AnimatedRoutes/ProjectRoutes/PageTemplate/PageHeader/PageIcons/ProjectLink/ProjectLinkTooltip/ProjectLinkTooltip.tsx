@@ -1,7 +1,7 @@
 export const ProjectLinkTooltip = () => {
   return (
     <>
-      <div>View Site</div>
+      <div>View Project</div>
     </>
   );
 };
