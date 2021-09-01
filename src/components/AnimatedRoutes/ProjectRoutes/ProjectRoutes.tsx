@@ -14,6 +14,7 @@ export const ProjectRoutes = ({ allImages, desktopMenuIsVisible }: Props) => {
       {projectData.map((project) => (
         <Route exact path={"/" + project.imgName}>
           <PageTemplate
+            key={project.imgName}
             projectName={project.imgName}
             projectImages={allImages.filter((image) => {
               const re = new RegExp(project.imgName, "g");

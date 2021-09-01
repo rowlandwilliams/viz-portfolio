@@ -26,6 +26,7 @@ export const ImageSlider = ({
             handleImageClick={handleImageClick}
             activeImgIndex={activeImgIndex}
             backgroundColor={backgroundColor}
+            key={i + backgroundColor}
           />
         ))}
       </svg>

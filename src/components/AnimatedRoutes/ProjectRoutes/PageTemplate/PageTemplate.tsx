@@ -8,6 +8,7 @@ import { setImgHeightOnWindowSize } from "./utils/utils";
 import { PageTextTemplate } from "./PageTextTemplate/PageTextTemplate";
 import { ProjectDetails } from "./ProjectDetails/ProjectDetails";
 import { PageHeader } from "./PageHeader/PageHeader";
+import { useLocation } from "react-router-dom";
 
 interface Props {
   projectName: string;
@@ -26,7 +27,10 @@ export const PageTemplate = ({
   const [imgHeight, setImgHeight] = useState(0);
 
   // scroll top on load
-  // window.scrollTo(0, 0);
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   // dynamically set img size depending on screen size
   useEffect(() => {

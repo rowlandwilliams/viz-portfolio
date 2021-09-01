@@ -13,7 +13,7 @@ export const ProjectColumns = ({
   handleDesktopBurgerClick,
 }: Props) => {
   return (
-    <>
+    <div className="hidden md:flex">
       <LeftColumn
         allImages={allImages}
         handleDesktopBurgerClick={handleDesktopBurgerClick}
@@ -22,6 +22,6 @@ export const ProjectColumns = ({
         allImages={allImages}
         handleDesktopBurgerClick={handleDesktopBurgerClick}
       />
-    </>
+    </div>
   );
 };

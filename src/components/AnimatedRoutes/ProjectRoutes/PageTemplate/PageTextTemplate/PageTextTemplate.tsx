@@ -15,7 +15,9 @@ export const PageTextTemplate = ({ headerText, sectionParagraphs }: Props) => {
               {headerText}
             </div>
             {sectionParagraphs.map((sectionParagraph) => (
-              <div className="py-2">{sectionParagraph}</div>
+              <div className="py-2" key={sectionParagraph}>
+                {sectionParagraph}
+              </div>
             ))}
           </div>
         </div>
