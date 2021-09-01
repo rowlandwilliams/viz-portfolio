@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FadeInOnScrollComponent } from "../../../ProjectRoutes/PageTemplate/FadeInOnScrollComponent/FadeInOnScrollComponent";
 import { ProjectHoverText } from "./ProjectHoverText/ProjectHoverText";
 
 interface Props {
@@ -17,19 +18,21 @@ export const Project = ({
   handleDesktopBurgerClick,
 }: Props) => {
   return (
-    <div
-      className="mx-2 mb-4 md:rounded-md overflow-hidden"
-      onClick={() => handleDesktopBurgerClick(false)}
-    >
-      <Link to={imgName}>
-        <div className="relative">
-          <img src={projectThumbnail} alt={imgName} />
-          <ProjectHoverText
-            projectTitle={projectTitle}
-            backgroundColor={backgroundColor}
-          />
-        </div>
-      </Link>
-    </div>
+    <FadeInOnScrollComponent threshold={0.1}>
+      <div
+        className="md:mx-2 mb-4 rounded-md overflow-hidden"
+        onClick={() => handleDesktopBurgerClick(false)}
+      >
+        <Link to={imgName}>
+          <div className="relative">
+            <img src={projectThumbnail} alt={imgName} />
+            <ProjectHoverText
+              projectTitle={projectTitle}
+              backgroundColor={backgroundColor}
+            />
+          </div>
+        </Link>
+      </div>
+    </FadeInOnScrollComponent>
   );
 };

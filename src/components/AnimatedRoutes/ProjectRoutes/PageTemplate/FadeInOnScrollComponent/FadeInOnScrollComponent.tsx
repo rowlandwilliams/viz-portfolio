@@ -4,14 +4,18 @@ import { useIntersectionObserver } from "../PageTextTemplate/utils";
 
 interface Props {
   children: React.ReactNode;
+  threshold?: number;
 }
 
-export const FadeInOnScrollComponent = ({ children }: Props) => {
+export const FadeInOnScrollComponent = ({
+  children,
+  threshold = 0.25,
+}: Props) => {
   const fadeInRef = useRef(null);
 
   // check for 1/4 visibility
   const isQuarterVisible = useIntersectionObserver(fadeInRef, {
-    threshold: 0.25,
+    threshold: threshold,
   })?.isIntersecting;
 
   return (
