@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a6f523c9.chunk.css",
-    "main.js": "/static/js/main.508e0c32.chunk.js",
-    "main.js.map": "/static/js/main.508e0c32.chunk.js.map",
+    "main.js": "/static/js/main.cfc605f4.chunk.js",
+    "main.js.map": "/static/js/main.cfc605f4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6c7edd98.js",
     "runtime-main.js.map": "/static/js/runtime-main.6c7edd98.js.map",
     "static/js/2.2cffe349.chunk.js": "/static/js/2.2cffe349.chunk.js",
@@ -18,9 +18,9 @@
     "static/media/cycle-map2.jpg": "/static/media/cycle-map2.3e56cfbc.jpg",
     "static/media/farmingthefuture0.jpg": "/static/media/farmingthefuture0.567b6fff.jpg",
     "static/media/farmingthefuture1.jpg": "/static/media/farmingthefuture1.7619d72a.jpg",
-    "static/media/flow0.jpg": "/static/media/flow0.ee691df3.jpg",
-    "static/media/flow1.jpg": "/static/media/flow1.07dbe63d.jpg",
-    "static/media/flow2.jpg": "/static/media/flow2.71a5718c.jpg",
+    "static/media/flow0.jpg": "/static/media/flow0.b6226c40.jpg",
+    "static/media/flow1.jpg": "/static/media/flow1.272f24a7.jpg",
+    "static/media/flow2.jpg": "/static/media/flow2.9b71c7fc.jpg",
     "static/media/flow3.jpg": "/static/media/flow3.b2c021cd.jpg",
     "static/media/matopiba0.jpg": "/static/media/matopiba0.15071d18.jpg",
     "static/media/matopiba1.jpg": "/static/media/matopiba1.f5a45eca.jpg",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.6c7edd98.js",
     "static/js/2.2cffe349.chunk.js",
     "static/css/main.a6f523c9.chunk.css",
-    "static/js/main.508e0c32.chunk.js"
+    "static/js/main.cfc605f4.chunk.js"
   ]
 }
