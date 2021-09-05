@@ -97,7 +97,6 @@ export const PageTemplate = ({
             repoUrl={repoUrl}
             projectUrl={projectUrl}
           />
-
           <ProjectPageImages
             projectImages={projectImages}
             projectUrl={projectUrl}
