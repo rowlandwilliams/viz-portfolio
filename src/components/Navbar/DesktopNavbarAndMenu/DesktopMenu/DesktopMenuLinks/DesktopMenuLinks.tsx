@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
+import { OptionMenuLink } from "../../../OptionMenuLink/OptionMenuLink";
 
 interface Props {
   closeMenuOnLinkClick: (menuIsVisible: boolean) => void;
 }
 
+const designOptions = [
+  { linkOption: "Boards" },
+  { linkOption: "Digital" },
+  { linkOption: "Illustration" },
+];
 export const DesktopMenuLinks = ({ closeMenuOnLinkClick }: Props) => {
   return (
     <div className="hidden md:block mt-4 text-sm ">
       <Link to="/" onClick={() => closeMenuOnLinkClick(false)}>
-        <div className="hover:text-black">Projects</div>
+        <div className="hover:text-black">Code</div>
       </Link>
       <Link
         to="/about"
@@ -24,6 +30,11 @@ export const DesktopMenuLinks = ({ closeMenuOnLinkClick }: Props) => {
       >
         <div className="hover:text-black">CV</div>
       </a>
+      <OptionMenuLink
+        linkTitle="Design"
+        linkOptions={designOptions}
+        closeMenuOnLinkClick={closeMenuOnLinkClick}
+      />
     </div>
   );
 };
