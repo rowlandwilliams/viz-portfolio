@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface LinkOption {
@@ -15,12 +16,22 @@ export const OptionMenuLink = ({
   linkOptions,
   closeMenuOnLinkClick,
 }: Props) => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <div>
-      <div>{linkTitle}</div>
-      <div>
+      <div
+        className="flex justify-between items-center"
+        onClick={() => setIsActive(!isActive)}
+      >
+        <div className="cursor-pointer">{linkTitle}</div>
+        <div>{isActive ? <span>&#x25B3;</span> : <span>&#x25BD;</span>}</div>
+      </div>
+      <div className={isActive ? "block " : "hidden"}>
         {linkOptions.map((option) => (
-          <div className="text-xs ml-2">
+          <div
+            className="text-xs ml-2 hover:text-black"
+            key={option.linkOption}
+          >
             <Link
               to={"/" + option.linkOption.toLowerCase()}
               onClick={() => closeMenuOnLinkClick(false)}
