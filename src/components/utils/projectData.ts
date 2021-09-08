@@ -47,7 +47,7 @@ export const projectData = [
     ],
     projectSolution: [
       "We began by conducting in-depth research into the scope of data that would be required to fulfill the aim of the platform and each visualisation component. Once data sources had been located, we built infrastructure such as web scrapers to automate data collection.",
-      "As the final part of the discovery process, we built a component library using Storybook which laid the foundations for the final full-Technologies application to be built in the future. It also enabled Supernova AI to fine-tune their image as a unique, design-led sustainability platform as visualisation components that were previously static designs came to life in real-time, allowing design-changes to be incorporated with ease.",
+      "As the final part of the discovery process, we built a component library using Storybook which laid the foundations for the final full-stack application to be built in the future. It also enabled Supernova AI to fine-tune their image as a unique, design-led sustainability platform as visualisation components that were previously static designs came to life in real-time, allowing design-changes to be incorporated with ease.",
     ],
     backgroundColor: "blue-500",
     clientUrl: "https://supernova.ai",

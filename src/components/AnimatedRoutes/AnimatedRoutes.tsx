@@ -3,7 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import { Bio } from "./Bio/Bio";
 import { ImgData } from "../../types";
 import { ProjectsGrid } from "./ProjectsGrid/ProjectsGrid";
-import { ProjectRoutes } from "./ProjectRoutes/ProjectRoutes";
+import { CodeRoutes } from "./CodeRoutes/CodeRoutes";
+import { DesignRoutes } from "./DesignRoutes/DesignRoutes";
 
 interface Props {
   allImages: ImgData[];
@@ -29,7 +30,8 @@ export const AnimatedRoutes = ({
         <Route path="/about">
           <Bio desktopMenuIsVisible={desktopMenuIsVisible} />
         </Route>
-        <ProjectRoutes
+        <DesignRoutes />
+        <CodeRoutes
           allImages={allImages}
           desktopMenuIsVisible={desktopMenuIsVisible}
         />

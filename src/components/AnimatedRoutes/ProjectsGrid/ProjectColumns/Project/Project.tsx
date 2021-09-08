@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FadeInOnScrollComponent } from "../../../ProjectRoutes/PageTemplate/FadeInOnScrollComponent/FadeInOnScrollComponent";
+import { FadeInOnScrollComponent } from "../../../CodeRoutes/CodePageTemplate/FadeInOnScrollComponent/FadeInOnScrollComponent";
 import { ProjectHoverText } from "./ProjectHoverText/ProjectHoverText";
 
 interface Props {

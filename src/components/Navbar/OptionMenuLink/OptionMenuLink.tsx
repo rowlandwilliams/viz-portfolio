@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 interface LinkOption {
   linkOption: string;
+  imgFolderName: string;
 }
 
 interface Props {
@@ -33,7 +34,7 @@ export const OptionMenuLink = ({
             key={option.linkOption}
           >
             <Link
-              to={"/" + option.linkOption.toLowerCase()}
+              to={"/" + option.imgFolderName}
               onClick={() => closeMenuOnLinkClick(false)}
             >
               {option.linkOption}

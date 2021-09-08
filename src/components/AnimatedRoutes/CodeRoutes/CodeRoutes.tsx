@@ -1,14 +1,14 @@
 import { Route } from "react-router-dom";
 import { ImgData } from "../../../types";
 import { projectData } from "../../utils/projectData";
-import { PageTemplate } from "./PageTemplate/PageTemplate";
+import { PageTemplate } from "./CodePageTemplate/CodePageTemplate";
 
 interface Props {
   allImages: ImgData[];
   desktopMenuIsVisible: boolean;
 }
 
-export const ProjectRoutes = ({ allImages, desktopMenuIsVisible }: Props) => {
+export const CodeRoutes = ({ allImages, desktopMenuIsVisible }: Props) => {
   return (
     <>
       {projectData.map((project) => (
@@ -20,7 +20,6 @@ export const ProjectRoutes = ({ allImages, desktopMenuIsVisible }: Props) => {
               const re = new RegExp(project.imgName, "g");
               return image.slug.match(re);
             })}
-            desktopMenuIsVisible={desktopMenuIsVisible}
           />
         </Route>
       ))}

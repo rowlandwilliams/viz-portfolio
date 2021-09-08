@@ -1,15 +1,11 @@
 import { Link } from "react-router-dom";
+import { designData } from "../../../../utils/designData";
 import { OptionMenuLink } from "../../../OptionMenuLink/OptionMenuLink";
 
 interface Props {
   closeMenuOnLinkClick: (menuIsVisible: boolean) => void;
 }
 
-const designOptions = [
-  { linkOption: "Boards" },
-  { linkOption: "Digital" },
-  { linkOption: "Illustration" },
-];
 export const DesktopMenuLinks = ({ closeMenuOnLinkClick }: Props) => {
   return (
     <div className="hidden md:block mt-4 text-sm ">
@@ -19,7 +15,7 @@ export const DesktopMenuLinks = ({ closeMenuOnLinkClick }: Props) => {
         </Link>
         <OptionMenuLink
           linkTitle="Design"
-          linkOptions={designOptions}
+          linkOptions={designData}
           closeMenuOnLinkClick={closeMenuOnLinkClick}
         />
       </div>

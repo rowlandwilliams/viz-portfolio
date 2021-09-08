@@ -16,7 +16,7 @@ export const DesktopMenu = ({
   return (
     <div
       className={classNames(
-        "flex flex-col justify-between md:h-screen pt-8 pb-6 transition-all ease-in-out duration-150 overflow-hidden",
+        "flex flex-col justify-between md:h-screen pt-8 pb-4 transition-all ease-in-out duration-150 overflow-hidden",
         {
           "w-28 overflow-visible px-4 opacity-100": desktopMenuIsVisible,
           "w-0 px-0 opacity-0": !desktopMenuIsVisible,
