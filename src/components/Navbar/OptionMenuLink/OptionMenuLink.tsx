@@ -21,10 +21,10 @@ export const OptionMenuLink = ({
   return (
     <div>
       <div
-        className="flex justify-between items-center"
+        className="flex justify-between items-center cursor-pointer"
         onClick={() => setIsActive(!isActive)}
       >
-        <div className="cursor-pointer">{linkTitle}</div>
+        <div>{linkTitle}</div>
         <div>{isActive ? <span>&#x25B3;</span> : <span>&#x25BD;</span>}</div>
       </div>
       <div className={isActive ? "block " : "hidden"}>
