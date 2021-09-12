@@ -3,8 +3,9 @@ import { Route, Switch } from "react-router-dom";
 import { Bio } from "./Bio/Bio";
 import { ImgData } from "../../types";
 import { ProjectsGrid } from "./ProjectsGrid/ProjectsGrid";
-import { CodeRoutes } from "./CodeRoutes/CodeRoutes";
 import { DesignRoutes } from "./DesignRoutes/DesignRoutes";
+import { projectData } from "../utils/projectData";
+import { CodePageTemplate } from "./CodeRoutes/CodePageTemplate/CodePageTemplate";
 
 interface Props {
   allImages: ImgData[];
@@ -30,11 +31,19 @@ export const AnimatedRoutes = ({
         <Route path="/about">
           <Bio desktopMenuIsVisible={desktopMenuIsVisible} />
         </Route>
+        {projectData.map((project) => (
+          <Route path={"/" + project.imgName}>
+            <CodePageTemplate
+              key={project.imgName}
+              projectName={project.imgName}
+              projectImages={allImages.filter((image) => {
+                const re = new RegExp(project.imgName, "g");
+                return image.slug.match(re);
+              })}
+            />
+          </Route>
+        ))}
         <DesignRoutes />
-        <CodeRoutes
-          allImages={allImages}
-          desktopMenuIsVisible={desktopMenuIsVisible}
-        />
       </Switch>
     </AnimatePresence>
   );

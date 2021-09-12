@@ -13,7 +13,7 @@ export const DesignRoutes = () => {
   return (
     <>
       {designData.map((designProject) => (
-        <Route path={"/" + designProject.imgFolderName}>
+        <Route exact path={"/" + designProject.imgFolderName}>
           <DesignPageTemplate
             imgName={designProject.imgFolderName}
             projectImages={designImages.filter((image) => {

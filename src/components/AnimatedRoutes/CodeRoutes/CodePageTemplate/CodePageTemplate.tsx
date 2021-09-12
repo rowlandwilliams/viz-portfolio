@@ -15,10 +15,7 @@ interface Props {
   projectImages: ImgData[];
 }
 
-export const PageTemplate = ({
-  projectName,
-  projectImages,
-}: Props) => {
+export const CodePageTemplate = ({ projectName, projectImages }: Props) => {
   const [activeImgIndex, setActiveImgIndex] = useState(0);
   const headerRef = useRef<HTMLDivElement>(null);
 

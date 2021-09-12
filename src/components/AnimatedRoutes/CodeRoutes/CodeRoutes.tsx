@@ -1,19 +1,18 @@
 import { Route } from "react-router-dom";
 import { ImgData } from "../../../types";
 import { projectData } from "../../utils/projectData";
-import { PageTemplate } from "./CodePageTemplate/CodePageTemplate";
+import { CodePageTemplate } from "./CodePageTemplate/CodePageTemplate";
 
 interface Props {
   allImages: ImgData[];
-  desktopMenuIsVisible: boolean;
 }
 
-export const CodeRoutes = ({ allImages, desktopMenuIsVisible }: Props) => {
+export const CodeRoutes = ({ allImages,  }: Props) => {
   return (
     <>
       {projectData.map((project) => (
-        <Route exact path={"/" + project.imgName}>
-          <PageTemplate
+        <Route path={"/" + project.imgName}>
+          <CodePageTemplate
             key={project.imgName}
             projectName={project.imgName}
             projectImages={allImages.filter((image) => {
