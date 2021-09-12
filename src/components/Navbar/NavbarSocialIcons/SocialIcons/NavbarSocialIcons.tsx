@@ -1,5 +1,5 @@
-import { GithubLinkIcon } from "../../../AnimatedRoutes/ProjectRoutes/PageTemplate/PageHeader/PageIcons/GithubLink/GithubLinkIcon/GithubLinkIcon";
-import { HoverIcon } from "../../../AnimatedRoutes/ProjectRoutes/PageTemplate/PageHeader/PageIcons/HoverIcon/HoverIcon";
+import { GithubLinkIcon } from "../../../AnimatedRoutes/CodeRoutes/CodePageTemplate/PageHeader/PageIcons/GithubLink/GithubLinkIcon/GithubLinkIcon";
+import { HoverIcon } from "../../../AnimatedRoutes/CodeRoutes/CodePageTemplate/PageHeader/PageIcons/HoverIcon/HoverIcon";
 import { LinkedIn } from "./LinkedIn/Linkedin";
 
 interface Props {

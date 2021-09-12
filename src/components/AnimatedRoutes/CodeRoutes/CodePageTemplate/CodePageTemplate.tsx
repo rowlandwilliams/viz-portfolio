@@ -13,13 +13,11 @@ import { useLocation } from "react-router-dom";
 interface Props {
   projectName: string;
   projectImages: ImgData[];
-  desktopMenuIsVisible: boolean;
 }
 
 export const PageTemplate = ({
   projectName,
   projectImages,
-  desktopMenuIsVisible,
 }: Props) => {
   const [activeImgIndex, setActiveImgIndex] = useState(0);
   const headerRef = useRef<HTMLDivElement>(null);
